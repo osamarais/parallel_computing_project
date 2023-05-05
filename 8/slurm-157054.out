@@ -1,0 +1,1360 @@
++ '[' x12 = x ']'
++ '[' x6 = x ']'
++ srun hostname -s
++ sort -u
++ awk '{ print $0 "-ib slots=6"; }' /tmp/hosts.157054
++ mv /tmp/tmp.157054 /tmp/hosts.157054
++ module load gcc/7.4.0/1
+++ /usr/share/lmod/lmod/libexec/lmod bash load gcc/7.4.0/1
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cuda/10.1
+
++ eval 'CUDA_PATH=/usr/local/cuda-10.1;' export 'CUDA_PATH;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1\;/opt/ibm/spectrum_mpi/profilesupport/lib:1\;/opt/ibm/spectrum_mpi/lib:1\;/opt/mellanox/sharp/lib:1\;/opt/mellanox/hcoll/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib;' export 'LD_LIBRARY_PATH;' 'LMOD_FAMILY_COMPILER=gcc;' export 'LMOD_FAMILY_COMPILER;' 'LMOD_FAMILY_COMPILER_VERSION=7.4.0/1;' export 'LMOD_FAMILY_COMPILER_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=spectrum-mpi/10.3:1\;gcc/7.4.0/1:1\;cuda/10.1:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=spectrum-mpi/10.3:gcc/7.4.0/1:cuda/10.1;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1\;/opt/ibm/spectrum_mpi/share/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:/opt/ibm/spectrum_mpi/share/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/usr/local/cuda-10.1/bin:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1\;/opt/ibm/spectrum_mpi/bin:1\;/usr/lpp/mmfs/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/opt/ibutils/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/usr/local/cuda-10.1/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/opt/ibm/spectrum_mpi/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uZ2NjLzcuNC4wLzEvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMvdS9zb2Z0;' export '_ModuleTable001_;' '_ModuleTable002_=d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5h;' export '_ModuleTable002_;' '_ModuleTable003_=bWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMS8uY3VkYS8xMC4xIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzIix9;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ CUDA_PATH=/usr/local/cuda-10.1
+++ export CUDA_PATH
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/usr/local/cuda-10.1/lib64:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1;/opt/ibm/spectrum_mpi/profilesupport/lib:1;/opt/ibm/spectrum_mpi/lib:1;/opt/mellanox/sharp/lib:1;/opt/mellanox/hcoll/lib:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib
+++ export LD_LIBRARY_PATH
+++ LMOD_FAMILY_COMPILER=gcc
+++ export LMOD_FAMILY_COMPILER
+++ LMOD_FAMILY_COMPILER_VERSION=7.4.0/1
+++ export LMOD_FAMILY_COMPILER_VERSION
+++ __LMOD_REF_COUNT_LOADEDMODULES='spectrum-mpi/10.3:1;gcc/7.4.0/1:1;cuda/10.1:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=spectrum-mpi/10.3:gcc/7.4.0/1:cuda/10.1
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1;/opt/ibm/spectrum_mpi/share/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:/opt/ibm/spectrum_mpi/share/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1;/gpfs/u/software/ppc64le-rhel7/modulefiles:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/usr/local/cuda-10.1/bin:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1;/opt/ibm/spectrum_mpi/bin:1;/usr/lpp/mmfs/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibutils/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/usr/local/cuda-10.1/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/opt/ibm/spectrum_mpi/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uZ2NjLzcuNC4wLzEvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMvdS9zb2Z0
+++ export _ModuleTable001_
+++ _ModuleTable002_=d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5h
+++ export _ModuleTable002_
+++ _ModuleTable003_=bWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMS8uY3VkYS8xMC4xIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzIix9
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load spectrum-mpi
+++ /usr/share/lmod/lmod/libexec/lmod bash load spectrum-mpi
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cuda/10.1
+
++ eval 'CUDA_PATH=/usr/local/cuda-10.1;' export 'CUDA_PATH;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:1\;/opt/ibm/spectrum_mpi/profilesupport/lib:1\;/opt/ibm/spectrum_mpi/lib:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1\;/opt/mellanox/sharp/lib:1\;/opt/mellanox/hcoll/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib;' export 'LD_LIBRARY_PATH;' 'LMOD_FAMILY_MPI=spectrum-mpi;' export 'LMOD_FAMILY_MPI;' 'LMOD_FAMILY_MPI_VERSION=10.3;' export 'LMOD_FAMILY_MPI_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=gcc/7.4.0/1:1\;spectrum-mpi/10.3:1\;cuda/10.1:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/ibm/spectrum_mpi/share/man:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/ibm/spectrum_mpi/share/man:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles;' export 'MODULEPATH;' 'MPI_ROOT=/opt/ibm/spectrum_mpi;' export 'MPI_ROOT;' 'OPAL_LIBDIR=/opt/ibm/spectrum_mpi/lib;' export 'OPAL_LIBDIR;' '__LMOD_REF_COUNT_PATH=/usr/local/cuda-10.1/bin:1\;/opt/ibm/spectrum_mpi/bin:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1\;/usr/lpp/mmfs/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/opt/ibutils/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv;' export '_ModuleTable001_;' '_ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi;' export '_ModuleTable002_;' '_ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ CUDA_PATH=/usr/local/cuda-10.1
+++ export CUDA_PATH
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/usr/local/cuda-10.1/lib64:1;/opt/ibm/spectrum_mpi/profilesupport/lib:1;/opt/ibm/spectrum_mpi/lib:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1;/opt/mellanox/sharp/lib:1;/opt/mellanox/hcoll/lib:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib
+++ export LD_LIBRARY_PATH
+++ LMOD_FAMILY_MPI=spectrum-mpi
+++ export LMOD_FAMILY_MPI
+++ LMOD_FAMILY_MPI_VERSION=10.3
+++ export LMOD_FAMILY_MPI_VERSION
+++ __LMOD_REF_COUNT_LOADEDMODULES='gcc/7.4.0/1:1;spectrum-mpi/10.3:1;cuda/10.1:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/opt/ibm/spectrum_mpi/share/man:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/opt/ibm/spectrum_mpi/share/man:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles
+++ export MODULEPATH
+++ MPI_ROOT=/opt/ibm/spectrum_mpi
+++ export MPI_ROOT
+++ OPAL_LIBDIR=/opt/ibm/spectrum_mpi/lib
+++ export OPAL_LIBDIR
+++ __LMOD_REF_COUNT_PATH='/usr/local/cuda-10.1/bin:1;/opt/ibm/spectrum_mpi/bin:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1;/usr/lpp/mmfs/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibutils/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv
+++ export _ModuleTable001_
+++ _ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi
+++ export _ModuleTable002_
+++ _ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load cuda
+++ /usr/share/lmod/lmod/libexec/lmod bash load cuda
++ eval 'CUDA_PATH=/usr/local/cuda-10.1;' export 'CUDA_PATH;' 'LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib;' export 'LD_LIBRARY_PATH;' 'LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1;' export 'LOADEDMODULES;' 'MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles;' export 'MODULEPATH;' 'PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin;' export 'PATH;' '_LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv;' export '_ModuleTable001_;' '_ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi;' export '_ModuleTable002_;' '_ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ CUDA_PATH=/usr/local/cuda-10.1
+++ export CUDA_PATH
+++ LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1
+++ export LOADEDMODULES
+++ MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles
+++ export MODULEPATH
+++ PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin
+++ export PATH
+++ _LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv
+++ export _ModuleTable001_
+++ _ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi
+++ export _ModuleTable002_
+++ _ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ mpirun -hostfile /tmp/hosts.157054 -np 12 /gpfs/u/home/SCMM/SCMMrsdd/barn/project/ga-cuda-mpi-exe 7_cities.txt 0
+Hello world from rank 1 out of 12 processors
+Hello world from rank 4 out of 12 processors
+Hello world from rank 7 out of 12 processors
+Hello world from rank 11 out of 12 processors
+Hello world from rank 9 out of 12 processors
+Hello world from rank 6 out of 12 processors
+Hello world from rank 10 out of 12 processors
+Hello world from rank 8 out of 12 processors
+Hello world from rank 0 out of 12 processors
+Hello world from rank 2 out of 12 processors
+Hello world from rank 3 out of 12 processors
+Hello world from rank 5 out of 12 processors
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+6.0
+0.0
+7.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Here 6.000000
+Here 0.000000
+Here 7.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Matrix 6.000000 0.000000
+Matrix 7.000000 0.000000
+Complete distance_cities
+Allocate Map on GPU
+copied mat into map
+completed file read function
+time() 1588664848
+Individual 36:  6 2 0 1 4 3 5
+Individual 37:  5 6 2 0 1 3 4
+Individual 38:  2 0 4 5 3 6 1
+Individual 39:  3 5 2 4 1 6 0
+Allocate Map on GPU
+copied mat into map
+completed file read function
+time() 1588664848
+Individual 28:  2 0 4 1 3 5 6
+Individual 29:  5 3 6 1 0 4 2
+Individual 30:  3 5 4 6 2 0 1
+Individual 31:  5 6 0 2 1 3 4
+Allocate Map on GPU
+copied mat into map
+completed file read function
+time() 1588664848
+Individual 12:  0 2 3 4 1 5 6
+Individual 13:  1 2 0 6 4 3 5
+Individual 14:  3 4 0 1 6 2 5
+Individual 15:  6 0 1 3 4 5 2
+Allocate Map on GPU
+copied mat into map
+completed file read function
+time() 1588664848
+Individual 4:  3 0 2 4 1 6 5
+Individual 5:  2 3 5 6 0 1 4
+Individual 6:  0 2 1 3 4 5 6
+Individual 7:  1 3 6 4 5 2 0
+Allocate Map on GPU
+copied mat into map
+completed file read function
+time() 1588664848
+Individual 20:  6 3 0 4 1 2 5
+Individual 21:  6 3 5 1 2 4 0
+Individual 22:  0 3 1 2 4 5 6
+Individual 23:  2 0 3 4 5 6 1
+Allocate Map on GPU
+Allocate Map on GPU
+copied mat into map
+completed file read function
+time() 1588664848
+copied mat into map
+completed file read function
+Individual 40:  1 0 2 3 4 5 6
+Individual 41:  3 4 0 5 6 1 2
+Individual 42:  6 5 2 3 0 1 4
+Individual 43:  6 3 5 2 4 0 1
+time() 1588664848
+Individual 44:  5 2 0 6 1 3 4
+Individual 45:  3 4 5 0 1 6 2
+Individual 46:  5 6 4 1 0 3 2
+Individual 47:  4 6 0 1 2 3 5
+Allocate Map on GPU
+copied mat into map
+completed file read function
+time() 1588664848
+Individual 0:  1 4 2 5 3 6 0
+Individual 1:  2 1 3 4 5 6 0
+Individual 2:  6 0 3 1 2 4 5
+Individual 3:  0 5 2 3 6 1 4
+Allocate Map on GPU
+copied mat into map
+completed file read function
+time() 1588664848
+Individual 8:  4 2 6 3 0 1 5
+Individual 9:  1 2 4 3 5 6 0
+Individual 10:  0 2 1 4 6 3 5
+Individual 11:  0 6 1 2 3 4 5
+Allocate Map on GPU
+copied mat into map
+completed file read function
+Allocate Map on GPU
+time() 1588664848
+Individual 16:  3 1 2 5 0 6 4
+Individual 17:  2 3 6 0 1 4 5
+Individual 18:  0 3 6 1 2 4 5
+Individual 19:  1 2 4 5 3 6 0
+copied mat into map
+completed file read function
+Allocate Map on GPU
+copied mat into map
+time() 1588664848
+Individual 32:  6 2 3 4 0 1 5
+Individual 33:  5 3 0 6 2 1 4
+Individual 34:  4 0 6 1 2 3 5
+Individual 35:  3 6 2 1 0 4 5
+Individual 0:  1 4 2 5 3 6 0
+Individual 1:  2 1 3 4 5 6 0
+Individual 2:  6 0 3 1 2 4 5
+Individual 3:  0 5 2 3 6 1 4
+Individual 4:  3 0 2 4 1 6 5
+Individual 5:  2 3 5 6 0 1 4
+Individual 6:  0 2 1 3 4 5 6
+Individual 7:  1 3 6 4 5 2 0
+Individual 8:  4 2 6 3 0 1 5
+Individual 9:  1 2 4 3 5 6 0
+Individual 10:  0 2 1 4 6 3 5
+Individual 11:  0 6 1 2 3 4 5
+Individual 12:  0 2 3 4 1 5 6
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+completed file read function
+time() 1588664848
+Individual 24:  2 6 5 3 4 0 1
+Individual 25:  6 5 0 4 1 3 2
+Individual 26:  3 4 6 1 0 2 5
+Individual 27:  6 1 0 2 3 4 5
+Allocating fitness array on GPU
+Individual 13:  1 2 0 6 4 3 5
+Individual 14:  3 4 0 1 6 2 5
+Individual 15:  6 0 1 3 4 5 2
+Individual 16:  3 1 2 5 0 6 4
+Individual 17:  2 3 6 0 1 4 5
+Individual 18:  0 3 6 1 2 4 5
+Individual 19:  1 2 4 5 3 6 0
+Individual 20:  6 3 0 4 1 2 5
+Individual 21:  6 3 5 1 2 4 0
+Individual 22:  0 3 1 2 4 5 6
+Individual 23:  2 0 3 4 5 6 1
+Individual 24:  2 6 5 3 4 0 1
+Individual 25:  6 5 0 4 1 3 2
+Individual 26:  3 4 6 1 0 2 5
+Individual 27:  6 1 0 2 3 4 5
+Individual 28:  2 0 4 1 3 5 6
+Individual 29:  5 3 6 1 0 4 2
+Individual 30:  3 5 4 6 2 0 1
+Individual 31:  5 6 0 2 1 3 4
+Individual 32:  6 2 3 4 0 1 5
+Individual 33:  5 3 0 6 2 1 4
+Individual 34:  4 0 6 1 2 3 5
+Individual 35:  3 6 2 1 0 4 5
+Individual 36:  6 2 0 1 4 3 5
+Individual 37:  5 6 2 0 1 3 4
+Individual 38:  2 0 4 5 3 6 1
+Individual 39:  3 5 2 4 1 6 0
+Individual 40:  1 0 2 3 4 5 6
+Individual 41:  3 4 0 5 6 1 2
+Individual 42:  6 5 2 3 0 1 4
+Individual 43:  6 3 5 2 4 0 1
+Individual 44:  5 2 0 6 1 3 4
+Individual 45:  3 4 5 0 1 6 2
+Individual 46:  5 6 4 1 0 3 2
+Individual 47:  4 6 0 1 2 3 5
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Populating offsets
+Populating offsets
+Populating offsets
+Populating offsets
+Populating offsets
+Printing the cumulative sums
+Individual 0 : 20.000000
+Individual 1 : 34.000000
+Individual 2 : 50.000000
+Individual 3 : 74.000000
+Individual 4 : 18.000000
+Individual 5 : 34.000000
+Individual 6 : 48.000000
+Individual 7 : 62.000000
+Individual 8 : 18.000000
+Individual 9 : 32.000000
+Individual 10 : 50.000000
+Individual 11 : 70.000000
+Individual 12 : 18.000000
+Individual 13 : 36.000000
+Individual 14 : 56.000000
+Individual 15 : 74.000000
+Individual 16 : 20.000000
+Individual 17 : 38.000000
+Individual 18 : 58.000000
+Individual 19 : 74.000000
+Individual 20 : 18.000000
+Individual 21 : 40.000000
+Individual 22 : 56.000000
+Individual 23 : 70.000000
+Individual 24 : 14.000000
+Individual 25 : 34.000000
+Individual 26 : 50.000000
+Individual 27 : 62.000000
+Individual 28 : 18.000000
+Individual 29 : 38.000000
+Individual 30 : 52.000000
+Individual 31 : 66.000000
+Individual 32 : 16.000000
+Individual 33 : 36.000000
+Individual 34 : 56.000000
+Individual 35 : 72.000000
+Individual 36 : 14.000000
+Individual 37 : 26.000000
+Individual 38 : 44.000000
+Individual 39 : 68.000000
+Individual 40 : 12.000000
+Individual 41 : 30.000000
+Individual 42 : 44.000000
+Individual 43 : 64.000000
+Individual 44 : 20.000000
+Individual 45 : 38.000000
+Individual 46 : 52.000000
+Individual 47 : 66.000000
+Populating offsets
+Printing the offsets
+Rank 0 : 74.000000
+Rank 1 : 136.000000
+Rank 2 : 206.000000
+Rank 3 : 280.000000
+Rank 4 : 354.000000
+Rank 5 : 424.000000
+Rank 6 : 486.000000
+Rank 7 : 552.000000
+Populating offsets
+Rank 8 : 624.000000
+Rank 9 : 692.000000
+Rank 10 : 756.000000
+Rank 11 : 822.000000
+Printing modified cumulative sums
+Individual 0 : 20.000000
+Individual 1 : 34.000000
+Individual 2 : 50.000000
+Individual 3 : 74.000000
+Individual 4 : 92.000000
+Individual 5 : 108.000000
+Individual 6 : 122.000000
+Individual 7 : 136.000000
+Individual 8 : 154.000000
+Individual 9 : 168.000000
+Individual 10 : 186.000000
+Individual 11 : 206.000000
+Individual 12 : 224.000000
+Individual 13 : 242.000000
+Individual 14 : 262.000000
+Individual 15 : 280.000000
+Individual 16 : 300.000000
+Individual 17 : 318.000000
+Populating offsets
+Populating offsets
+Individual 18 : 338.000000
+Individual 19 : 354.000000
+Individual 20 : 372.000000
+Individual 21 : 394.000000
+Individual 22 : 410.000000
+Individual 23 : 424.000000
+Individual 24 : 438.000000
+Individual 25 : 458.000000
+Individual 26 : 474.000000
+Populating offsets
+Populating offsets
+Populating offsets
+Individual 27 : 486.000000
+Individual 28 : 504.000000
+Individual 29 : 524.000000
+Individual 30 : 538.000000
+Individual 31 : 552.000000
+Individual 32 : 568.000000
+Individual 33 : 588.000000
+Individual 34 : 608.000000
+Individual 35 : 624.000000
+Individual 36 : 638.000000
+Individual 37 : 650.000000
+Individual 38 : 668.000000
+Individual 39 : 692.000000
+Individual 40 : 704.000000
+Individual 41 : 722.000000
+Individual 42 : 736.000000
+Individual 43 : 756.000000
+Individual 44 : 776.000000
+Individual 45 : 794.000000
+Individual 46 : 808.000000
+Individual 47 : 822.000000
+Generating the Roulette Wheel
+Number is  147.000000 with index 8
+Number is  515.000000 with index 29
+Number is  90.000000 with index 4
+Next gen individuals after rouletteNext Individual 0:  1 4 2 5 3 6 0
+Next Individual 1:  2 1 3 4 5 6 0
+Next Individual 2:  6 0 3 1 2 4 5
+Next Individual 3:  0 5 2 3 6 1 4
+Next Individual 4:  0 0 0 0 0 0 0
+Next Individual 5:  0 0 0 0 0 0 0
+Next Individual 6:  0 0 0 0 0 0 0
+Next Individual 7:  0 0 0 0 0 0 0
+Next Individual 8:  0 0 0 0 0 0 0
+Next Individual 9:  0 0 0 0 0 0 0
+Next Individual 10:  0 0 0 0 0 0 0
+Next Individual 11:  0 0 0 0 0 0 0
+Next Individual 12:  0 0 0 0 0 0 0
+Next Individual 13:  0 0 0 0 0 0 0
+Next Individual 14:  0 0 0 0 0 0 0
+Next Individual 15:  0 0 0 0 0 0 0
+Next Individual 16:  0 0 0 0 0 0 0
+Next Individual 17:  0 0 0 0 0 0 0
+Next Individual 18:  0 0 0 0 0 0 0
+Next Individual 19:  0 0 0 0 0 0 0
+Next Individual 20:  0 0 0 0 0 0 0
+Next Individual 21:  0 0 0 0 0 0 0
+Next Individual 22:  0 0 0 0 0 0 0
+Next Individual 23:  0 0 0 0 0 0 0
+Next Individual 24:  0 0 0 0 0 0 0
+Next Individual 25:  0 0 0 0 0 0 0
+Next Individual 26:  0 0 0 0 0 0 0
+Next Individual 27:  0 0 0 0 0 0 0
+Next Individual 28:  0 0 0 0 0 0 0
+Next Individual 29:  0 0 0 0 0 0 0
+Next Individual 30:  0 0 0 0 0 0 0
+Next Individual 31:  0 0 0 0 0 0 0
+Next Individual 32:  0 0 0 0 0 0 0
+Next Individual 33:  0 0 0 0 0 0 0
+Next Individual 34:  0 0 0 0 0 0 0
+Next Individual 35:  0 0 0 0 0 0 0
+Next Individual 36:  0 0 0 0 0 0 0
+Next Individual 37:  0 0 0 0 0 0 0
+Next Individual 38:  0 0 0 0 0 0 0
+Next Individual 39:  0 0 0 0 0 0 0
+Next Individual 40:  0 0 0 0 0 0 0
+Next Individual 41:  0 0 0 0 0 0 0
+Next Individual 42:  0 0 0 0 0 0 0
+Next Individual 43:  0 0 0 0 0 0 0
+Next Individual 44:  0 0 0 0 0 0 0
+Next Individual 45:  0 0 0 0 0 0 0
+Next Individual 46:  0 0 0 0 0 0 0
+Next Individual 47:  0 0 0 0 0 0 0
+Printing the global roulette wheel
+8 
+29 
+4 
+21 
+31 
+23 
+33 
+43 
+28 
+27 
+46 
+6 
+33 
+24 
+27 
+8 
+10 
+32 
+7 
+24 
+4 
+12 
+6 
+8 
+15 
+31 
+2 
+31 
+2 
+36 
+27 
+14 
+47 
+37 
+9 
+45 
+i = 0
+The two selected roulette wheel indices are 17 and 7 
+THe two cuts are 0, 6 
+Launched crossover kernel on 1 blocks 
+i = 0
+The two selected roulette wheel indices are 25 and 15 
+i = 0
+The two selected roulette wheel indices are 13 and 35 
+i = 0
+The two selected roulette wheel indices are 21 and 30 
+i = 0
+The two selected roulette wheel indices are 28 and 6 
+THe two cuts are 2, 3 
+Launched crossover kernel on 1 blocks 
+Next gen individuals after roulette selection kernel launch
+Next Individual after kernel 0:  4 2 6 3 0 1 5
+Next Individual after kernel 1:  5 3 6 1 0 4 2
+Next Individual after kernel 2:  3 0 2 4 1 6 5
+Next Individual after kernel 3:  0 5 2 3 6 1 4
+Next Individual after kernel 4:  6 3 5 1 2 4 0
+THe two cuts are 2, 6 
+Launched crossover kernel on 1 blocks 
+THe two cuts are 2, 3 
+Launched crossover kernel on 1 blocks 
+THe two cuts are 4, 6 
+Launched crossover kernel on 1 blocks 
+Next Individual after kernel 5:  5 6 0 2 1 3 4
+Next Individual after kernel 6:  2 0 3 4 5 6 1
+Next Individual after kernel 7:  0 0 0 0 0 0 0
+Next Individual after kernel 8:  5 3 0 6 2 1 4
+Next Individual after kernel 9:  6 3 5 2 4 0 1
+Next Individual after kernel 10:  2 0 4 1 3 5 6
+Next Individual after kernel 11:  0 0 0 0 0 0 0
+Next Individual after kernel 12:  6 1 0 2 3 4 5
+Next Individual after kernel 13:  5 6 4 1 0 3 2
+Next Individual after kernel 14:  0 2 1 3 4 5 6
+Next Individual after kernel 15:  0 0 0 0 0 0 0
+Next Individual after kernel 16:  5 3 0 6 2 1 4
+Next Individual after kernel 17:  2 6 5 3 4 0 1
+Next Individual after kernel 18:  6 1 0 2 3 4 5
+Next Individual after kernel 19:  0 0 0 0 0 0 0
+Next Individual after kernel 20:  4 2 6 3 0 1 5
+Next Individual after kernel 21:  0 2 1 4 6 3 5
+Next Individual after kernel 22:  6 2 3 4 0 1 5
+Next Individual after kernel 23:  0 0 0 0 0 0 0
+Next Individual after kernel 24:  1 3 6 4 5 2 0
+Next Individual after kernel 25:  2 6 5 3 4 0 1
+i = 0
+The two selected roulette wheel indices are 23 and 20 
+Next Individual after kernel 26:  3 0 2 4 1 6 5
+Next Individual after kernel 27:  0 0 0 0 0 0 0
+Next Individual after kernel 28:  0 2 3 4 1 5 6
+Next Individual after kernel 29:  0 2 1 3 4 5 6
+Next Individual after kernel 30:  4 2 6 3 0 1 5
+Next Individual after kernel 31:  0 0 0 0 0 0 0
+Next Individual after kernel 32:  6 0 1 3 4 5 2
+Next Individual after kernel 33:  5 6 0 2 1 3 4
+Next Individual after kernel 34:  6 0 3 1 2 4 5
+Next Individual after kernel 35:  0 0 0 0 0 0 0
+Next Individual after kernel 36:  5 6 0 2 1 3 4
+Next Individual after kernel 37:  6 0 3 1 2 4 5
+Next Individual after kernel 38:  6 2 0 1 4 3 5
+Next Individual after kernel 39:  0 0 0 0 0 0 0
+Next Individual after kernel 40:  6 1 0 2 3 4 5
+i = 0
+The two selected roulette wheel indices are 29 and 18 
+Next Individual after kernel 41:  3 4 0 1 6 2 5
+Next Individual after kernel 42:  4 6 0 1 2 3 5
+Next Individual after kernel 43:  0 0 0 0 0 0 0
+Next Individual after kernel 44:  5 6 2 0 1 3 4
+Next Individual after kernel 45:  1 2 4 3 5 6 0
+Next Individual after kernel 46:  3 4 5 0 1 6 2
+Next Individual after kernel 47:  0 0 0 0 0 0 0
+i = 0
+i = 0
+The two selected roulette wheel indices are 26 and 0 
+i = 0
+The two selected roulette wheel indices are 7 and 11 
+THe two cuts are 3, 4 
+Launched crossover kernel on 1 blocks 
+THe two cuts are 1, 2 
+Launched crossover kernel on 1 blocks 
+The two selected roulette wheel indices are 7 and 5 
+THe two cuts are 5, 6 
+Local Children number is 1 
+Printing pop list
+Child 0 recipe  43  23  5  6 
+Launched crossover kernel on 1 blocks 
+THe two cuts are 3, 5 
+Launched crossover kernel on 1 blocks 
+i = 0
+The two selected roulette wheel indices are 17 and 0 
+THe two cuts are 2, 5 
+Launched crossover kernel on 1 blocks 
+THe two cuts are 0, 6 
+Launched crossover kernel on 1 blocks 
+i = 0
+The two selected roulette wheel indices are 9 and 7 
+THe two cuts are 0, 3 
+Launched crossover kernel on 1 blocks 
+Next gen individuals after crossover kernel launch
+Rank 0 after kernel 0:  4 2 6 3 0 1 5
+Rank 0 after kernel 1:  5 3 6 1 0 4 2
+Rank 0 after kernel 2:  3 0 2 4 1 6 5
+Rank 0 after kernel 3:  3 5 2 4 0 6 1
+Rank 0 after kernel 4:  6 3 5 1 2 4 0
+Rank 0 after kernel 5:  5 6 0 2 1 3 4
+Rank 0 after kernel 6:  2 0 3 4 5 6 1
+Rank 0 after kernel 7:  0 0 0 0 0 0 0
+Rank 0 after kernel 8:  5 3 0 6 2 1 4
+Rank 0 after kernel 9:  6 3 5 2 4 0 1
+Rank 0 after kernel 10:  2 0 4 1 3 5 6
+Rank 0 after kernel 11:  0 0 0 0 0 0 0
+Rank 0 after kernel 12:  6 1 0 2 3 4 5
+Rank 0 after kernel 13:  5 6 4 1 0 3 2
+Rank 0 after kernel 14:  0 2 1 3 4 5 6
+Rank 0 after kernel 15:  0 0 0 0 0 0 0
+Rank 0 after kernel 16:  5 3 0 6 2 1 4
+Rank 0 after kernel 17:  2 6 5 3 4 0 1
+Rank 0 after kernel 18:  6 1 0 2 3 4 5
+Rank 0 after kernel 19:  0 0 0 0 0 0 0
+Rank 0 after kernel 20:  4 2 6 3 0 1 5
+Rank 0 after kernel 21:  0 2 1 4 6 3 5
+Rank 0 after kernel 22:  6 2 3 4 0 1 5
+Rank 0 after kernel 23:  0 0 0 0 0 0 0
+Rank 0 after kernel 24:  1 3 6 4 5 2 0
+Rank 0 after kernel 25:  2 6 5 3 4 0 1
+Rank 0 after kernel 26:  3 0 2 4 1 6 5
+Rank 0 after kernel 27:  0 0 0 0 0 0 0
+Rank 0 after kernel 28:  0 2 3 4 1 5 6
+Rank 0 after kernel 29:  0 2 1 3 4 5 6
+Rank 0 after kernel 30:  4 2 6 3 0 1 5
+Rank 0 after kernel 31:  0 0 0 0 0 0 0
+Rank 0 after kernel 32:  6 0 1 3 4 5 2
+Rank 0 after kernel 33:  5 6 0 2 1 3 4
+Rank 0 after kernel 34:  6 0 3 1 2 4 5
+Rank 0 after kernel 35:  0 0 0 0 0 0 0
+Rank 0 after kernel 36:  5 6 0 2 1 3 4
+Rank 0 after kernel 37:  6 0 3 1 2 4 5
+Rank 0 after kernel 38:  6 2 0 1 4 3 5
+Rank 0 after kernel 39:  0 0 0 0 0 0 0
+Rank 0 after kernel 40:  6 1 0 2 3 4 5
+Rank 0 after kernel 41:  3 4 0 1 6 2 5
+Rank 0 after kernel 42:  4 6 0 1 2 3 5
+Rank 0 after kernel 43:  0 0 0 0 0 0 0
+Rank 0 after kernel 44:  5 6 2 0 1 3 4
+Rank 0 after kernel 45:  1 2 4 3 5 6 0
+Rank 0 after kernel 46:  3 4 5 0 1 6 2
+Rank 0 after kernel 47:  0 0 0 0 0 0 0
+Running create local mutation
+     Rank 1 created 3 mutants
+Rank 1,    Ind  36     ind1 1     ind2 0
+Rank 1,    Ind  47     ind1 1     ind2 5
+Rank 1,    Ind  14     ind1 1     ind2 3
+   Rereading rank 1,  ind 36     ind1 1    ind2 0 
+   Rereading rank 1,  ind 47     ind1 1    ind2 5 
+   Rereading rank 1,  ind 14     ind1 1    ind2 3 
+Running sync local mutation
+Running create local mutation
+     Rank 3 created 3 mutants
+Rank 3,    Ind  22     ind1 4     ind2 0
+Rank 3,    Ind  15     ind1 6     ind2 0
+Rank 3,    Ind  32     ind1 3     ind2 5
+   Rereading rank 3,  ind 22     ind1 4    ind2 0 
+   Rereading rank 3,  ind 15     ind1 6    ind2 0 
+   Rereading rank 3,  ind 32     ind1 3    ind2 5 
+Running sync local mutation
+Running create local mutation
+     Rank 2 created 3 mutants
+Rank 2,    Ind  31     ind1 1     ind2 0
+Rank 2,    Ind  5     ind1 1     ind2 0
+Rank 2,    Ind  3     ind1 6     ind2 3
+   Rereading rank 2,  ind 31     ind1 1    ind2 0 
+   Rereading rank 2,  ind 5     ind1 1    ind2 0 
+   Rereading rank 2,  ind 3     ind1 6    ind2 3 
+Running sync local mutation
+Next gen individuals after syncing children
+Rank 0 after sync 0:  4 2 6 3 0 1 5
+Rank 0 after sync 1:  5 3 6 1 0 4 2
+Rank 0 after sync 2:  3 0 2 4 1 6 5
+Rank 0 after sync 3:  3 5 2 4 0 6 1
+Rank 0 after sync 4:  6 3 5 1 2 4 0
+Rank 0 after sync 5:  5 6 0 2 1 3 4
+Rank 0 after sync 6:  2 0 3 4 5 6 1
+Rank 0 after sync 7:  2 3 0 4 1 5 6
+Rank 0 after sync 8:  5 3 0 6 2 1 4
+Rank 0 after sync 9:  6 3 5 2 4 0 1
+Rank 0 after sync 10:  2 0 4 1 3 5 6
+Running create local mutation
+     Rank 4 created 1 mutants
+Rank 4,    Ind  11     ind1 0     ind2 3
+   Rereading rank 4,  ind 11     ind1 0    ind2 3 
+Running sync local mutation
+Running create local mutation
+     Rank 5 created 0 mutants
+Running sync local mutation
+Rank 0 after sync 11:  5 3 4 0 1 6 2
+Rank 0 after sync 12:  6 1 0 2 3 4 5
+Rank 0 after sync 13:  5 6 4 1 0 3 2
+Rank 0 after sync 14:  0 2 1 3 4 5 6
+Rank 0 after sync 15:  6 3 5 2 4 0 1
+Rank 0 after sync 16:  5 3 0 6 2 1 4
+Rank 0 after sync 17:  2 6 5 3 4 0 1
+Rank 0 after sync 18:  6 1 0 2 3 4 5
+Rank 0 after sync 19:  6 3 0 1 2 4 5
+Rank 0 after sync 20:  4 2 6 3 0 1 5
+Rank 0 after sync 21:  0 2 1 4 6 3 5
+Rank 0 after sync 22:  6 2 3 4 0 1 5
+Rank 0 after sync 23:  5 2 6 3 0 1 4
+Rank 0 after sync 24:  1 3 6 4 5 2 0
+Rank 0 after sync 25:  2 6 5 3 4 0 1
+Rank 0 after sync 26:  3 0 2 4 1 6 5
+Rank 0 after sync 27:  6 3 5 2 4 1 0
+Rank 0 after sync 28:  0 2 3 4 1 5 6
+Rank 0 after sync 29:  0 2 1 3 4 5 6
+Rank 0 after sync 30:  4 2 6 3 0 1 5
+Rank 0 after sync 31:  2 4 6 3 0 1 5
+Rank 0 after sync 32:  6 0 1 3 4 5 2
+Rank 0 after sync 33:  5 6 0 2 1 3 4
+Rank 0 after sync 34:  6 0 3 1 2 4 5
+Rank 0 after sync 35:  4 2 6 3 0 1 5
+Rank 0 after sync 36:  5 6 0 2 1 3 4
+Rank 0 after sync 37:  6 0 3 1 2 4 5
+Rank 0 after sync 38:  6 2 0 1 4 3 5
+Rank 0 after sync 39:  6 3 0 4 1 5 2
+Rank 0 after sync 40:  6 1 0 2 3 4 5
+Rank 0 after sync 41:  3 4 0 1 6 2 5
+Rank 0 after sync 42:  4 6 0 1 2 3 5
+Rank 0 after sync 43:  2 3 0 1 4 5 6
+Rank 0 after sync 44:  5 6 2 0 1 3 4
+Rank 0 after sync 45:  1 2 4 3 5 6 0
+Rank 0 after sync 46:  3 4 5 0 1 6 2
+Rank 0 after sync 47:  6 5 2 3 4 0 1
+Running create local mutation
+     Rank 0 created 2 mutants
+Rank 0,    Ind  40     ind1 1     ind2 2
+Rank 0,    Ind  39     ind1 3     ind2 0
+   Rereading rank 0,  ind 40     ind1 1    ind2 2 
+   Rereading rank 0,  ind 39     ind1 3    ind2 0 
+Running sync local mutation
+Mutation count of rank 0 is 2 
+Mutation count of rank 1 is 3 
+Running create local mutation
+     Rank 10 created 2 mutants
+Rank 10,    Ind  0     ind1 5     ind2 1
+Rank 10,    Ind  13     ind1 6     ind2 5
+   Rereading rank 10,  ind 0     ind1 5    ind2 1 
+   Rereading rank 10,  ind 13     ind1 6    ind2 5 
+Running sync local mutation
+Calling syncmuationdata
+Calling syncmuationdata
+Calling syncmuationdata
+Calling syncmuationdata
+Calling syncmuationdata
+Mutation count of rank 2 is 3 
+Mutation count of rank 3 is 3 
+Mutation count of rank 4 is 1 
+Mutation count of rank 5 is 0 
+Mutation count of rank 6 is 2 
+Mutation count of rank 7 is 3 
+Mutation count of rank 8 is 2 
+Mutation count of rank 9 is 1 
+Mutation count of rank 10 is 2 
+Mutation count of rank 11 is 2 
+Calling syncmuationdata
+Synced rank 0   indiv 40    inde 1  inde 2
+Synced rank 0   indiv 39    inde 3  inde 0
+Synced rank 1   indiv 36    inde 1  inde 0
+Synced rank 1   indiv 47    inde 1  inde 5
+Running create local mutation
+     Rank 9 created 1 mutants
+Rank 9,    Ind  39     ind1 1     ind2 2
+   Rereading rank 9,  ind 39     ind1 1    ind2 2 
+Running sync local mutation
+Running create local mutation
+     Rank 6 created 2 mutants
+Rank 6,    Ind  43     ind1 0     ind2 6
+Rank 6,    Ind  21     ind1 1     ind2 0
+   Rereading rank 6,  ind 43     ind1 0    ind2 6 
+   Rereading rank 6,  ind 21     ind1 1    ind2 0 
+Running sync local mutation
+Running create local mutation
+     Rank 7 created 3 mutants
+Rank 7,    Ind  29     ind1 0     ind2 2
+Rank 7,    Ind  28     ind1 5     ind2 6
+Rank 7,    Ind  30     ind1 0     ind2 4
+   Rereading rank 7,  ind 29     ind1 0    ind2 2 
+   Rereading rank 7,  ind 28     ind1 5    ind2 6 
+   Rereading rank 7,  ind 30     ind1 0    ind2 4 
+Running create local mutation
+     Rank 8 created 2 mutants
+Rank 8,    Ind  36     ind1 2     ind2 1
+Rank 8,    Ind  40     ind1 4     ind2 0
+   Rereading rank 8,  ind 36     ind1 2    ind2 1 
+   Rereading rank 8,  ind 40     ind1 4    ind2 0 
+Running sync local mutation
+Running create local mutation
+     Rank 11 created 2 mutants
+Rank 11,    Ind  9     ind1 2     ind2 5
+Rank 11,    Ind  20     ind1 4     ind2 1
+   Rereading rank 11,  ind 9     ind1 2    ind2 5 
+   Rereading rank 11,  ind 20     ind1 4    ind2 1 
+Running sync local mutation
+Performing Mutations
+At rank 5     min is 14.000000      at index     3
+Performing Mutations
+At rank 4     min is 16.000000      at index     3
+Performing Mutations
+At rank 2     min is 14.000000      at index     1
+Performing Mutations
+At rank 1     min is 14.000000      at index     2
+Synced rank 1   indiv 14    inde 1  inde 3
+Synced rank 2   indiv 31    inde 1  inde 0
+Synced rank 2   indiv 5    inde 1  inde 0
+Synced rank 2   indiv 3    inde 6  inde 3
+Synced rank 3   indiv 22    inde 4  inde 0
+Synced rank 3   indiv 15    inde 6  inde 0
+Synced rank 3   indiv 32    inde 3  inde 5
+Synced rank 4   indiv 11    inde 0  inde 3
+Synced rank 6   indiv 43    inde 0  inde 6
+Synced rank 6   indiv 21    inde 1  inde 0
+Synced rank 7   indiv 29    inde 0  inde 2
+Synced rank 7   indiv 28    inde 5  inde 6
+Synced rank 7   indiv 30    inde 0  inde 4
+Synced rank 8   indiv 36    inde 2  inde 1
+Synced rank 8   indiv 40    inde 4  inde 0
+Synced rank 9   indiv 39    inde 1  inde 2
+Synced rank 10   indiv 0    inde 5  inde 1
+Synced rank 10   indiv 13    inde 6  inde 5
+Synced rank 11   indiv 9    inde 2  inde 5
+Synced rank 11   indiv 20    inde 4  inde 1
+Performing Mutations
+Next gen individuals after mutation
+Rank 0 after mut 0:  4 1 6 3 0 2 5
+Rank 0 after mut 1:  5 3 6 1 0 4 2
+Rank 0 after mut 2:  3 0 2 4 1 6 5
+Rank 0 after mut 3:  3 5 2 1 0 6 4
+Rank 0 after mut 4:  6 3 5 1 2 4 0
+Rank 0 after mut 5:  6 5 0 2 1 3 4
+Rank 0 after mut 6:  2 0 3 4 5 6 1
+Rank 0 after mut 7:  2 3 0 4 1 5 6
+Rank 0 after mut 8:  5 3 0 6 2 1 4
+Rank 0 after mut 9:  6 3 0 2 4 5 1
+Rank 0 after mut 10:  2 0 4 1 3 5 6
+Rank 0 after mut 11:  0 3 4 5 1 6 2
+Rank 0 after mut 12:  6 1 0 2 3 4 5
+Performing Mutations
+At rank 3     min is 18.000000      at index     0
+Running sync local mutation
+Rank 0 after mut 13:  5 6 4 1 0 2 3
+Rank 0 after mut 14:  0 3 1 2 4 5 6
+Rank 0 after mut 15:  1 3 5 2 4 0 6
+Rank 0 after mut 16:  5 3 0 6 2 1 4
+Rank 0 after mut 17:  2 6 5 3 4 0 1
+Rank 0 after mut 18:  6 1 0 2 3 4 5
+Rank 0 after mut 19:  6 3 0 1 2 4 5
+Rank 0 after mut 20:  4 0 6 3 2 1 5
+Rank 0 after mut 21:  2 0 1 4 6 3 5
+Rank 0 after mut 22:  0 2 3 4 6 1 5
+Rank 0 after mut 23:  5 2 6 3 0 1 4
+Rank 0 after mut 24:  1 3 6 4 5 2 0
+Rank 0 after mut 25:  2 6 5 3 4 0 1
+Calling syncmuationdata
+Rank 0 after mut 26:  3 0 2 4 1 6 5
+Rank 0 after mut 27:  6 3 5 2 4 1 0
+Rank 0 after mut 28:  0 2 3 4 1 6 5
+Rank 0 after mut 29:  1 2 0 3 4 5 6
+Rank 0 after mut 30:  0 2 6 3 4 1 5
+Rank 0 after mut 31:  4 2 6 3 0 1 5
+Rank 0 after mut 32:  6 0 1 5 4 3 2
+Rank 0 after mut 33:  5 6 0 2 1 3 4
+Rank 0 after mut 34:  6 0 3 1 2 4 5
+Rank 0 after mut 35:  4 2 6 3 0 1 5
+Rank 0 after mut 36:  6 0 5 2 1 3 4
+Rank 0 after mut 37:  6 0 3 1 2 4 5
+Rank 0 after mut 38:  6 2 0 1 4 3 5
+Rank 0 after mut 39:  4 0 3 6 1 5 2
+Rank 0 after mut 40:  3 0 1 2 6 4 5
+Rank 0 after mut 41:  3 4 0 1 6 2 5
+Rank 0 after mut 42:  4 6 0 1 2 3 5
+Rank 0 after mut 43:  6 3 0 1 4 5 2
+Rank 0 after mut 44:  5 6 2 0 1 3 4
+Rank 0 after mut 45:  1 2 4 3 5 6 0
+Rank 0 after mut 46:  3 4 5 0 1 6 2
+Rank 0 after mut 47:  6 0 2 3 4 5 1
+At rank 0     min is 14.000000      at index     1
+             Reading out synced rank 0     min is 14.000000      at index     1
+             Reading out synced rank 1     min is 14.000000      at index     6
+             Reading out synced rank 2     min is 14.000000      at index     9
+             Reading out synced rank 3     min is 18.000000      at index     12
+             Reading out synced rank 4     min is 16.000000      at index     19
+             Reading out synced rank 5     min is 14.000000      at index     23
+             Reading out synced rank 6     min is 12.000000      at index     27
+             Reading out synced rank 7     min is 14.000000      at index     30
+             Reading out synced rank 8     min is 16.000000      at index     32
+             Reading out synced rank 9     min is 12.000000      at index     37
+             Reading out synced rank 10     min is 12.000000      at index     40
+             Reading out synced rank 11     min is 14.000000      at index     46
+Calling syncmuationdata
+Performing Mutations
+Calling syncmuationdata
+Performing Mutations
+The global minimum is 12.000000  at index 27 
+The total runtime for GA is 1.52643
+Calling syncmuationdata
+Performing Mutations
+At rank 9     min is 12.000000      at index     1
+Calling syncmuationdata
+Performing Mutations
+At rank 10     min is 12.000000      at index     0
+Calling syncmuationdata
+Performing Mutations
+At rank 7     min is 14.000000      at index     2
+At rank 8     min is 16.000000      at index     0
+Performing Mutations
+At rank 6     min is 12.000000      at index     3
+At rank 11     min is 14.000000      at index     2
++ rm /tmp/hosts.157054

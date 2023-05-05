@@ -1,0 +1,408 @@
++ '[' x3 = x ']'
++ '[' x3 = x ']'
++ srun hostname -s
++ sort -u
++ awk '{ print $0 "-ib slots=3"; }' /tmp/hosts.153000
++ mv /tmp/tmp.153000 /tmp/hosts.153000
++ module load gcc/7.4.0/1
+++ /usr/share/lmod/lmod/libexec/lmod bash load gcc/7.4.0/1
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cuda/10.1
+
++ eval 'CUDA_PATH=/usr/local/cuda-10.1;' export 'CUDA_PATH;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1\;/opt/ibm/spectrum_mpi/profilesupport/lib:1\;/opt/ibm/spectrum_mpi/lib:1\;/opt/mellanox/sharp/lib:1\;/opt/mellanox/hcoll/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib;' export 'LD_LIBRARY_PATH;' 'LMOD_FAMILY_COMPILER=gcc;' export 'LMOD_FAMILY_COMPILER;' 'LMOD_FAMILY_COMPILER_VERSION=7.4.0/1;' export 'LMOD_FAMILY_COMPILER_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=spectrum-mpi/10.3:1\;gcc/7.4.0/1:1\;cuda/10.1:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=spectrum-mpi/10.3:gcc/7.4.0/1:cuda/10.1;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1\;/opt/ibm/spectrum_mpi/share/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:/opt/ibm/spectrum_mpi/share/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/usr/local/cuda-10.1/bin:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1\;/opt/ibm/spectrum_mpi/bin:1\;/usr/lpp/mmfs/bin:1\;/opt/cci/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/opt/ibutils/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/usr/local/cuda-10.1/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/opt/ibm/spectrum_mpi/bin:/usr/lpp/mmfs/bin:/opt/cci/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uZ2NjLzcuNC4wLzEvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMvdS9zb2Z0;' export '_ModuleTable001_;' '_ModuleTable002_=d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5h;' export '_ModuleTable002_;' '_ModuleTable003_=bWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMS8uY3VkYS8xMC4xIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzIix9;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ CUDA_PATH=/usr/local/cuda-10.1
+++ export CUDA_PATH
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/usr/local/cuda-10.1/lib64:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1;/opt/ibm/spectrum_mpi/profilesupport/lib:1;/opt/ibm/spectrum_mpi/lib:1;/opt/mellanox/sharp/lib:1;/opt/mellanox/hcoll/lib:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib
+++ export LD_LIBRARY_PATH
+++ LMOD_FAMILY_COMPILER=gcc
+++ export LMOD_FAMILY_COMPILER
+++ LMOD_FAMILY_COMPILER_VERSION=7.4.0/1
+++ export LMOD_FAMILY_COMPILER_VERSION
+++ __LMOD_REF_COUNT_LOADEDMODULES='spectrum-mpi/10.3:1;gcc/7.4.0/1:1;cuda/10.1:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=spectrum-mpi/10.3:gcc/7.4.0/1:cuda/10.1
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1;/opt/ibm/spectrum_mpi/share/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:/opt/ibm/spectrum_mpi/share/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1;/gpfs/u/software/ppc64le-rhel7/modulefiles:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/usr/local/cuda-10.1/bin:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1;/opt/ibm/spectrum_mpi/bin:1;/usr/lpp/mmfs/bin:1;/opt/cci/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibutils/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/usr/local/cuda-10.1/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/opt/ibm/spectrum_mpi/bin:/usr/lpp/mmfs/bin:/opt/cci/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uZ2NjLzcuNC4wLzEvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMvdS9zb2Z0
+++ export _ModuleTable001_
+++ _ModuleTable002_=d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5h
+++ export _ModuleTable002_
+++ _ModuleTable003_=bWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMS8uY3VkYS8xMC4xIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzIix9
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load spectrum-mpi
+++ /usr/share/lmod/lmod/libexec/lmod bash load spectrum-mpi
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cuda/10.1
+
++ eval 'CUDA_PATH=/usr/local/cuda-10.1;' export 'CUDA_PATH;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:1\;/opt/ibm/spectrum_mpi/profilesupport/lib:1\;/opt/ibm/spectrum_mpi/lib:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1\;/opt/mellanox/sharp/lib:1\;/opt/mellanox/hcoll/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib;' export 'LD_LIBRARY_PATH;' 'LMOD_FAMILY_MPI=spectrum-mpi;' export 'LMOD_FAMILY_MPI;' 'LMOD_FAMILY_MPI_VERSION=10.3;' export 'LMOD_FAMILY_MPI_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=gcc/7.4.0/1:1\;spectrum-mpi/10.3:1\;cuda/10.1:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/ibm/spectrum_mpi/share/man:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/ibm/spectrum_mpi/share/man:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles;' export 'MODULEPATH;' 'MPI_ROOT=/opt/ibm/spectrum_mpi;' export 'MPI_ROOT;' 'OPAL_LIBDIR=/opt/ibm/spectrum_mpi/lib;' export 'OPAL_LIBDIR;' '__LMOD_REF_COUNT_PATH=/usr/local/cuda-10.1/bin:1\;/opt/ibm/spectrum_mpi/bin:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1\;/usr/lpp/mmfs/bin:1\;/opt/cci/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/opt/ibutils/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/opt/cci/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv;' export '_ModuleTable001_;' '_ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi;' export '_ModuleTable002_;' '_ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ CUDA_PATH=/usr/local/cuda-10.1
+++ export CUDA_PATH
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/usr/local/cuda-10.1/lib64:1;/opt/ibm/spectrum_mpi/profilesupport/lib:1;/opt/ibm/spectrum_mpi/lib:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1;/opt/mellanox/sharp/lib:1;/opt/mellanox/hcoll/lib:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib
+++ export LD_LIBRARY_PATH
+++ LMOD_FAMILY_MPI=spectrum-mpi
+++ export LMOD_FAMILY_MPI
+++ LMOD_FAMILY_MPI_VERSION=10.3
+++ export LMOD_FAMILY_MPI_VERSION
+++ __LMOD_REF_COUNT_LOADEDMODULES='gcc/7.4.0/1:1;spectrum-mpi/10.3:1;cuda/10.1:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/opt/ibm/spectrum_mpi/share/man:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/opt/ibm/spectrum_mpi/share/man:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles
+++ export MODULEPATH
+++ MPI_ROOT=/opt/ibm/spectrum_mpi
+++ export MPI_ROOT
+++ OPAL_LIBDIR=/opt/ibm/spectrum_mpi/lib
+++ export OPAL_LIBDIR
+++ __LMOD_REF_COUNT_PATH='/usr/local/cuda-10.1/bin:1;/opt/ibm/spectrum_mpi/bin:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1;/usr/lpp/mmfs/bin:1;/opt/cci/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibutils/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/opt/cci/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv
+++ export _ModuleTable001_
+++ _ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi
+++ export _ModuleTable002_
+++ _ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load cuda
+++ /usr/share/lmod/lmod/libexec/lmod bash load cuda
++ eval 'CUDA_PATH=/usr/local/cuda-10.1;' export 'CUDA_PATH;' 'LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib;' export 'LD_LIBRARY_PATH;' 'LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1;' export 'LOADEDMODULES;' 'MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles;' export 'MODULEPATH;' 'PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/opt/cci/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin;' export 'PATH;' '_LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv;' export '_ModuleTable001_;' '_ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi;' export '_ModuleTable002_;' '_ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ CUDA_PATH=/usr/local/cuda-10.1
+++ export CUDA_PATH
+++ LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1
+++ export LOADEDMODULES
+++ MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles
+++ export MODULEPATH
+++ PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/opt/cci/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin
+++ export PATH
+++ _LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv
+++ export _ModuleTable001_
+++ _ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi
+++ export _ModuleTable002_
+++ _ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ mpirun -hostfile /tmp/hosts.153000 -np 3 /gpfs/u/home/SCMM/SCMMrsdd/barn/project/ga-cuda-mpi-exe 5_cities.txt 0
+Hello world from rank 1 out of 3 processors
+Hello world from rank 2 out of 3 processors
+Hello world from rank 0 out of 3 processors
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+0.0
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+5.0
+1.0
+0.0
+2.0
+0.0
+3.0
+0.0
+4.0
+0.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+5.0
+0.0
+Here 1.000000
+Here 0.000000
+Here 2.000000
+Here 0.000000
+Here 3.000000
+Here 0.000000
+Here 4.000000
+Here 0.000000
+Here 5.000000
+Here 0.000000
+Matrix 1.000000 0.000000
+Complete distance_cities
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 2.000000 0.000000
+Matrix 3.000000 0.000000
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Complete distance_cities
+Matrix 4.000000 0.000000
+Matrix 5.000000 0.000000
+Complete distance_cities
+Allocate Map on GPU
+copied mat into map
+completed file read function
+time() 1588585494
+Individual 8:  0 1 2 3 4
+Individual 9:  1 2 3 4 0
+Individual 10:  4 3 0 1 2
+Individual 11:  4 3 1 2 0
+Individual 12:  4 3 0 1 2
+Individual 13:  4 0 3 1 2
+Individual 14:  2 1 3 4 0
+Individual 15:  4 1 0 2 3
+Allocate Map on GPU
+copied mat into map
+completed file read function
+Allocate Map on GPU
+time() 1588585494
+copied mat into map
+completed file read function
+Individual 16:  1 4 2 0 3
+Individual 17:  1 2 3 4 0
+time() 1588585494
+Individual 0:  3 1 2 0 4
+Individual 1:  0 1 2 4 3
+Individual 2:  2 3 0 4 1
+Individual 3:  1 0 2 3 4
+Individual 4:  1 3 2 4 0
+Individual 5:  0 2 3 4 1
+Individual 6:  4 2 3 0 1
+Individual 7:  2 3 1 4 0
+Individual 18:  3 1 0 2 4
+Individual 19:  1 2 3 4 0
+Individual 20:  3 4 2 0 1
+Individual 21:  0 1 3 4 2
+Individual 22:  4 0 1 3 2
+Individual 23:  0 4 1 3 2
+Allocating fitness array on GPU
+Individual 0:  3 1 2 0 4
+Individual 1:  0 1 2 4 3
+Individual 2:  2 3 0 4 1
+Individual 3:  1 0 2 3 4
+Individual 4:  1 3 2 4 0
+Individual 5:  0 2 3 4 1
+Individual 6:  4 2 3 0 1
+Individual 7:  2 3 1 4 0
+Individual 8:  0 1 2 3 4
+Individual 9:  1 2 3 4 0
+Individual 10:  4 3 0 1 2
+Individual 11:  4 3 1 2 0
+Allocating fitness array on GPU
+Individual 12:  4 3 0 1 2
+Individual 13:  4 0 3 1 2
+Individual 14:  2 1 3 4 0
+Individual 15:  4 1 0 2 3
+Individual 16:  1 4 2 0 3
+Individual 17:  1 2 3 4 0
+Individual 18:  3 1 0 2 4
+Individual 19:  1 2 3 4 0
+Individual 20:  3 4 2 0 1
+Individual 21:  0 1 3 4 2
+Individual 22:  4 0 1 3 2
+Individual 23:  0 4 1 3 2
+Allocating fitness array on GPU
+Populating offsets
+Generating the Roulette Wheel
+Populating offsets
+Generating the Roulette Wheel
+Printing the cumulative sums
+Individual 0 : 10.000000
+Individual 1 : 18.000000
+Individual 2 : 30.000000
+Individual 3 : 38.000000
+Individual 4 : 48.000000
+Individual 5 : 56.000000
+Individual 6 : 66.000000
+Individual 7 : 78.000000
+Individual 8 : 8.000000
+Individual 9 : 16.000000
+Individual 10 : 24.000000
+Individual 11 : 34.000000
+Individual 12 : 42.000000
+Individual 13 : 54.000000
+Individual 14 : 64.000000
+Individual 15 : 72.000000
+Individual 16 : 12.000000
+Individual 17 : 20.000000
+Individual 18 : 28.000000
+Individual 19 : 36.000000
+Individual 20 : 44.000000
+Individual 21 : 52.000000
+Individual 22 : 62.000000
+Individual 23 : 74.000000
+Populating offsets
+Printing the offsets
+Rank 0 : 78.000000
+Rank 1 : 150.000000
+Rank 2 : 224.000000
+Printing modified cumulative sums
+Individual 0 : 10.000000
+Individual 1 : 18.000000
+Individual 2 : 30.000000
+Individual 3 : 38.000000
+Individual 4 : 48.000000
+Individual 5 : 56.000000
+Individual 6 : 66.000000
+Individual 7 : 78.000000
+Individual 8 : 86.000000
+Individual 9 : 94.000000
+Individual 10 : 102.000000
+Individual 11 : 112.000000
+Individual 12 : 120.000000
+Individual 13 : 132.000000
+Individual 14 : 142.000000
+Individual 15 : 150.000000
+Individual 16 : 162.000000
+Individual 17 : 170.000000
+Individual 18 : 178.000000
+Individual 19 : 186.000000
+Individual 20 : 194.000000
+Individual 21 : 202.000000
+Individual 22 : 212.000000
+Individual 23 : 224.000000
+Generating the Roulette Wheel
+Number is  208.000000 with index 22
+Number is  61.000000 with index 6
+Number is  27.000000 with index 2
+Number is  115.000000 with index 12
+Number is  68.000000 with index 7
+Number is  160.000000 with index 16
+Next gen individuals after rouletteNext Individual 0:  4 0 1 3 2
+Next Individual 1:  4 2 3 0 1
+Next Individual 2:  2 3 0 4 1
+Next Individual 3:  4 3 0 1 2
+Next Individual 4:  2 3 1 4 0
+Next Individual 5:  1 4 2 0 3
+Next Individual 6:  4 2 3 0 1
+Next Individual 7:  2 3 1 4 0
+Next Individual 8:  0 0 0 0 0
+Next Individual 9:  0 0 0 0 0
+Next Individual 10:  0 0 0 0 0
+Next Individual 11:  0 0 0 0 0
+Next Individual 12:  0 0 0 0 0
+Next Individual 13:  0 0 0 0 0
+Next Individual 14:  0 0 0 0 0
+Next Individual 15:  0 0 0 0 0
+Next Individual 16:  0 0 0 0 0
+Next Individual 17:  0 0 0 0 0
+Next Individual 18:  0 0 0 0 0
+Next Individual 19:  0 0 0 0 0
+Next Individual 20:  0 0 0 0 0
+Next Individual 21:  0 0 0 0 0
+Next Individual 22:  0 0 0 0 0
+Next Individual 23:  0 0 0 0 0
+Printing the global roulette wheel22 
+6 
+2 
+12 
+7 
+16 
+14 
+0 
+4 
+6 
+23 
+10 
+13 
+19 
+11 
+23 
+0 
+16 
+Next gen individuals after kernel launchNext Individual after kernel 0:  4 0 1 3 2
+Next Individual after kernel 1:  4 2 3 0 1
+Next Individual after kernel 2:  2 3 0 4 1
+Next Individual after kernel 3:  4 3 0 1 2
+Next Individual after kernel 4:  2 3 1 4 0
+Next Individual after kernel 5:  1 4 2 0 3
+Next Individual after kernel 6:  4 2 3 0 1
+Next Individual after kernel 7:  2 3 1 4 0
+Next Individual after kernel 8:  2 1 3 4 0
+Next Individual after kernel 9:  3 1 2 0 4
+Next Individual after kernel 10:  1 3 2 4 0
+Next Individual after kernel 11:  4 2 3 0 1
+Next Individual after kernel 12:  0 4 1 3 2
+Next Individual after kernel 13:  4 3 0 1 2
+Next Individual after kernel 14:  0 0 0 0 0
+Next Individual after kernel 15:  0 0 0 0 0
+Next Individual after kernel 16:  4 0 3 1 2
+Next Individual after kernel 17:  1 2 3 4 0
+Next Individual after kernel 18:  4 3 1 2 0
+Next Individual after kernel 19:  0 4 1 3 2
+Next Individual after kernel 20:  3 1 2 0 4
+Next Individual after kernel 21:  1 4 2 0 3
+Next Individual after kernel 22:  0 0 0 0 0
+Next Individual after kernel 23:  0 0 0 0 0
+The total runtime for GA is 0.48691
++ rm /tmp/hosts.153000

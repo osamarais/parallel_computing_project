@@ -1,0 +1,1372 @@
++ '[' x6 = x ']'
++ '[' x6 = x ']'
++ srun hostname -s
++ sort -u
++ awk '{ print $0 "-ib slots=6"; }' /tmp/hosts.157478
++ mv /tmp/tmp.157478 /tmp/hosts.157478
++ module load gcc/7.4.0/1
+++ /usr/share/lmod/lmod/libexec/lmod bash load gcc/7.4.0/1
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cuda/10.1
+
++ eval 'CUDA_PATH=/usr/local/cuda-10.1;' export 'CUDA_PATH;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1\;/opt/ibm/spectrum_mpi/profilesupport/lib:1\;/opt/ibm/spectrum_mpi/lib:1\;/opt/mellanox/sharp/lib:1\;/opt/mellanox/hcoll/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib;' export 'LD_LIBRARY_PATH;' 'LMOD_FAMILY_COMPILER=gcc;' export 'LMOD_FAMILY_COMPILER;' 'LMOD_FAMILY_COMPILER_VERSION=7.4.0/1;' export 'LMOD_FAMILY_COMPILER_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=spectrum-mpi/10.3:1\;gcc/7.4.0/1:1\;cuda/10.1:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=spectrum-mpi/10.3:gcc/7.4.0/1:cuda/10.1;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1\;/opt/ibm/spectrum_mpi/share/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:/opt/ibm/spectrum_mpi/share/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/usr/local/cuda-10.1/bin:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1\;/opt/ibm/spectrum_mpi/bin:1\;/usr/lpp/mmfs/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/opt/ibutils/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/usr/local/cuda-10.1/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/opt/ibm/spectrum_mpi/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uZ2NjLzcuNC4wLzEvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMvdS9zb2Z0;' export '_ModuleTable001_;' '_ModuleTable002_=d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5h;' export '_ModuleTable002_;' '_ModuleTable003_=bWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMS8uY3VkYS8xMC4xIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzIix9;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ CUDA_PATH=/usr/local/cuda-10.1
+++ export CUDA_PATH
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/usr/local/cuda-10.1/lib64:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1;/opt/ibm/spectrum_mpi/profilesupport/lib:1;/opt/ibm/spectrum_mpi/lib:1;/opt/mellanox/sharp/lib:1;/opt/mellanox/hcoll/lib:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib
+++ export LD_LIBRARY_PATH
+++ LMOD_FAMILY_COMPILER=gcc
+++ export LMOD_FAMILY_COMPILER
+++ LMOD_FAMILY_COMPILER_VERSION=7.4.0/1
+++ export LMOD_FAMILY_COMPILER_VERSION
+++ __LMOD_REF_COUNT_LOADEDMODULES='spectrum-mpi/10.3:1;gcc/7.4.0/1:1;cuda/10.1:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=spectrum-mpi/10.3:gcc/7.4.0/1:cuda/10.1
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1;/opt/ibm/spectrum_mpi/share/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:/opt/ibm/spectrum_mpi/share/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1;/gpfs/u/software/ppc64le-rhel7/modulefiles:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/usr/local/cuda-10.1/bin:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1;/opt/ibm/spectrum_mpi/bin:1;/usr/lpp/mmfs/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibutils/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/usr/local/cuda-10.1/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/opt/ibm/spectrum_mpi/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1/cuda/10.1.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uZ2NjLzcuNC4wLzEvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMvdS9zb2Z0
+++ export _ModuleTable001_
+++ _ModuleTable002_=d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5h
+++ export _ModuleTable002_
+++ _ModuleTable003_=bWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMS8uY3VkYS8xMC4xIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzIix9
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load spectrum-mpi
+++ /usr/share/lmod/lmod/libexec/lmod bash load spectrum-mpi
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cuda/10.1
+
++ eval 'CUDA_PATH=/usr/local/cuda-10.1;' export 'CUDA_PATH;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:1\;/opt/ibm/spectrum_mpi/profilesupport/lib:1\;/opt/ibm/spectrum_mpi/lib:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1\;/opt/mellanox/sharp/lib:1\;/opt/mellanox/hcoll/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib;' export 'LD_LIBRARY_PATH;' 'LMOD_FAMILY_MPI=spectrum-mpi;' export 'LMOD_FAMILY_MPI;' 'LMOD_FAMILY_MPI_VERSION=10.3;' export 'LMOD_FAMILY_MPI_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=gcc/7.4.0/1:1\;spectrum-mpi/10.3:1\;cuda/10.1:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/ibm/spectrum_mpi/share/man:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/ibm/spectrum_mpi/share/man:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles;' export 'MODULEPATH;' 'MPI_ROOT=/opt/ibm/spectrum_mpi;' export 'MPI_ROOT;' 'OPAL_LIBDIR=/opt/ibm/spectrum_mpi/lib;' export 'OPAL_LIBDIR;' '__LMOD_REF_COUNT_PATH=/usr/local/cuda-10.1/bin:1\;/opt/ibm/spectrum_mpi/bin:1\;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1\;/usr/lpp/mmfs/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/opt/ibutils/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1\;/gpfs/u/home/SCMM/SCMMrsdd/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1\;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv;' export '_ModuleTable001_;' '_ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi;' export '_ModuleTable002_;' '_ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ CUDA_PATH=/usr/local/cuda-10.1
+++ export CUDA_PATH
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/usr/local/cuda-10.1/lib64:1;/opt/ibm/spectrum_mpi/profilesupport/lib:1;/opt/ibm/spectrum_mpi/lib:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:1;/opt/mellanox/sharp/lib:1;/opt/mellanox/hcoll/lib:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib
+++ export LD_LIBRARY_PATH
+++ LMOD_FAMILY_MPI=spectrum-mpi
+++ export LMOD_FAMILY_MPI
+++ LMOD_FAMILY_MPI_VERSION=10.3
+++ export LMOD_FAMILY_MPI_VERSION
+++ __LMOD_REF_COUNT_LOADEDMODULES='gcc/7.4.0/1:1;spectrum-mpi/10.3:1;cuda/10.1:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/opt/ibm/spectrum_mpi/share/man:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/opt/ibm/spectrum_mpi/share/man:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/share/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:1;/gpfs/u/software/ppc64le-rhel7/modulefiles:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles
+++ export MODULEPATH
+++ MPI_ROOT=/opt/ibm/spectrum_mpi
+++ export MPI_ROOT
+++ OPAL_LIBDIR=/opt/ibm/spectrum_mpi/lib
+++ export OPAL_LIBDIR
+++ __LMOD_REF_COUNT_PATH='/usr/local/cuda-10.1/bin:1;/opt/ibm/spectrum_mpi/bin:1;/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:1;/usr/lpp/mmfs/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibutils/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:1;/gpfs/u/home/SCMM/SCMMrsdd/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:1;/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv
+++ export _ModuleTable001_
+++ _ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi
+++ export _ModuleTable002_
+++ _ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load cuda
+++ /usr/share/lmod/lmod/libexec/lmod bash load cuda
++ eval 'CUDA_PATH=/usr/local/cuda-10.1;' export 'CUDA_PATH;' 'LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib;' export 'LD_LIBRARY_PATH;' 'LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1;' export 'LOADEDMODULES;' 'MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles;' export 'MODULEPATH;' 'PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin;' export 'PATH;' '_LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv;' export '_ModuleTable001_;' '_ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi;' export '_ModuleTable002_;' '_ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ CUDA_PATH=/usr/local/cuda-10.1
+++ export CUDA_PATH
+++ LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:/opt/ibm/spectrum_mpi/profilesupport/lib:/opt/ibm/spectrum_mpi/lib:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/lib64:/opt/mellanox/sharp/lib:/opt/mellanox/hcoll/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=gcc/7.4.0/1:spectrum-mpi/10.3:cuda/10.1
+++ export LOADEDMODULES
+++ MODULEPATH=/gpfs/u/software/ppc64le-rhel7/modulefiles/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/.cuda/10.1:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3:/gpfs/u/software/ppc64le-rhel7/modulefiles/.gcc/7.4.0/1:/gpfs/u/software/ppc64le-rhel7/modulefiles
+++ export MODULEPATH
+++ PATH=/usr/local/cuda-10.1/bin:/opt/ibm/spectrum_mpi/bin:/gpfs/u/software/ppc64le-rhel7/gcc/7.4.0/1/bin:/usr/lpp/mmfs/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/gpfs/u/home/SCMM/SCMMrsdd/.local/bin:/gpfs/u/home/SCMM/SCMMrsdd/bin
+++ export PATH
+++ _LMFILES_=/gpfs/u/software/ppc64le-rhel7/modulefiles/gcc/7.4.0/1.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/spectrum-mpi/10.3.lua:/gpfs/u/software/ppc64le-rhel7/modulefiles/.spectrum-mpi/10.3/cuda/10.1.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtjdWRhPXtbImZuIl09Ii9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcy8uc3BlY3RydW0tbXBpLzEwLjMvY3VkYS8xMC4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhLzEwLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17c3RhdGU9e1sic3RhYmxlIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxnY2M9e1siZm4iXT0iL2dwZnMv
+++ export _ModuleTable001_
+++ _ModuleTable002_=dS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL2djYy83LjQuMC8xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvNy40LjAvMSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYy83LjQuMC8xIix9LFsic3BlY3RydW0tbXBpIl09e1siZm4iXT0iL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3NwZWN0cnVtLW1waS8xMC4zLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuMyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtzdGF0ZT17WyJ0ZXN0aW5nIl09MSx9LH0sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsi
+++ export _ModuleTable002_
+++ _ModuleTable003_=dXNlck5hbWUiXT0ic3BlY3RydW0tbXBpIix9LH0sbXBhdGhBPXsiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zLy5jdWRhLzEwLjEiLCIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMvLnNwZWN0cnVtLW1waS8xMC4zIiwiL2dwZnMvdS9zb2Z0d2FyZS9wcGM2NGxlLXJoZWw3L21vZHVsZWZpbGVzLy5nY2MvNy40LjAvMSIsIi9ncGZzL3Uvc29mdHdhcmUvcHBjNjRsZS1yaGVsNy9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvZ3Bmcy91L3NvZnR3YXJlL3BwYzY0bGUtcmhlbDcvbW9kdWxlZmlsZXMiLH0=
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ mpirun -hostfile /tmp/hosts.157478 -np 6 /gpfs/u/home/SCMM/SCMMrsdd/barn/project/ga-cuda-mpi-exe 15_cities.txt 0
+Hello world from rank 1 out of 6 processors
+Hello world from rank 5 out of 6 processors
+Hello world from rank 0 out of 6 processors
+Hello world from rank 2 out of 6 processors
+Hello world from rank 3 out of 6 processors
+Hello world from rank 4 out of 6 processors
+time() 1588671693
+Individual 37:  0 4 7 3 8 5 10 2 1 9 11 6 12 13 14
+Individual 38:  6 7 0 8 13 10 5 11 9 12 14 1 2 4 3
+Individual 39:  7 4 6 8 14 5 12 2 0 9 10 3 11 13 1
+Individual 40:  11 7 6 3 0 12 14 13 1 2 4 5 8 9 10
+Individual 41:  7 11 13 6 3 5 12 8 9 14 4 10 0 1 2
+Individual 42:  13 14 3 12 4 5 0 9 8 1 10 11 2 6 7
+Individual 43:  7 6 1 12 13 11 2 0 3 4 5 8 9 10 14
+Individual 44:  13 7 10 1 11 5 12 14 0 6 2 3 8 9 4
+Individual 45:  4 14 5 12 11 8 9 6 10 13 7 0 1 2 3
+Individual 46:  13 0 5 8 1 9 6 12 11 4 10 14 7 2 3
+Individual 47:  2 12 13 7 10 0 1 3 14 4 8 5 6 9 11
+Individual 48:  12 7 0 9 8 10 2 13 14 1 3 4 5 6 11
+Individual 49:  2 0 12 6 14 1 3 7 4 13 8 10 11 5 9
+Individual 50:  2 3 12 9 13 11 4 6 10 7 14 0 8 1 5
+Individual 51:  13 10 0 11 2 6 12 8 14 5 7 1 3 9 4
+Individual 52:  11 10 6 0 5 12 13 14 8 7 1 9 2 4 3
+Individual 53:  8 2 1 0 5 10 13 7 3 11 12 4 6 9 14
+Individual 54:  4 7 11 2 8 9 5 12 0 13 10 14 3 1 6
+Individual 55:  1 4 12 10 11 2 5 13 3 6 14 0 7 8 9
+Individual 56:  3 9 2 6 12 10 0 11 14 1 7 13 5 4 8
+Individual 57:  0 12 1 13 14 4 7 5 2 9 3 6 8 10 11
+Individual 58:  9 10 4 11 8 12 13 14 2 0 1 3 6 5 7
+Individual 59:  2 13 3 4 11 1 7 12 14 0 5 6 8 9 10
+Individual 60:  11 13 12 0 1 6 2 14 7 3 4 5 8 9 10
+Individual 61:  1 12 10 11 0 14 13 2 3 4 5 7 6 8 9
+Individual 62:  1 2 3 14 4 5 6 10 7 8 13 9 11 12 0
+Individual 63:  14 10 13 2 6 5 1 3 4 7 12 8 11 9 0
+Individual 64:  6 5 9 0 4 7 11 1 2 8 10 12 13 14 3
+Individual 65:  13 5 9 3 7 0 1 2 10 4 6 8 12 14 11
+Individual 66:  11 12 1 13 14 0 9 8 2 3 6 10 7 4 5
+Individual 67:  5 9 6 0 7 14 8 10 1 3 2 11 12 4 13
+Individual 68:  7 3 5 1 2 10 13 4 11 6 8 9 12 14 0
+Individual 69:  7 0 8 13 9 12 4 14 3 11 2 5 6 10 1
+Individual 70:  14 13 6 12 7 0 8 4 2 3 1 5 9 10 11
+Individual 71:  2 5 7 3 4 14 0 1 6 9 11 8 10 12 13
+Individual 72:  10 9 4 1 13 11 2 5 6 12 14 0 8 3 7
+Individual 73:  0 13 11 8 7 9 14 10 12 5 1 2 3 4 6
+time() 1588671693
+Individual 111:  0 1 2 5 3 6 9 4 7 12 8 10 11 13 14
+Individual 112:  11 13 3 12 10 14 6 0 1 4 7 9 2 8 5
+Individual 113:  2 8 13 3 5 14 9 0 10 4 6 11 12 1 7
+Individual 114:  13 2 10 8 14 0 3 6 11 9 12 1 4 5 7
+Individual 115:  2 5 8 0 9 13 1 10 4 11 6 12 14 7 3
+Individual 116:  8 12 0 10 6 1 9 2 7 11 13 14 5 3 4
+Individual 117:  6 8 9 14 10 3 13 1 5 11 2 12 4 0 7
+Individual 118:  8 13 6 9 10 12 11 14 5 7 0 1 2 3 4
+Individual 119:  3 9 0 12 8 1 7 13 2 4 10 5 14 6 11
+Individual 120:  14 10 0 5 11 8 9 4 2 1 12 3 6 7 13
+Individual 121:  7 5 3 14 9 4 1 2 6 10 8 11 12 13 0
+Individual 122:  1 10 7 8 9 3 2 4 0 11 5 6 12 13 14
+Individual 123:  4 6 10 7 8 5 11 14 13 9 12 0 1 2 3
+Individual 124:  12 10 0 5 3 7 1 11 8 9 6 2 4 13 14
+Individual 125:  0 3 1 10 11 13 14 2 12 4 5 6 7 8 9
+Individual 126:  13 3 10 14 0 5 6 8 1 7 9 2 11 12 4
+Individual 127:  1 10 11 8 5 13 14 12 0 2 3 4 9 6 7
+Individual 128:  1 6 3 11 12 4 8 5 7 9 13 14 10 0 2
+Individual 129:  6 4 8 9 13 14 7 3 2 11 0 5 1 10 12
+Individual 130:  6 1 2 9 4 7 5 12 11 10 13 14 8 0 3
+Individual 131:  4 5 6 13 7 8 3 9 10 11 14 0 1 12 2
+Individual 132:  11 10 14 6 12 13 0 2 1 3 4 5 7 8 9
+Individual 133:  9 6 7 0 4 11 12 1 2 13 5 8 3 14 10
+Individual 134:  1 9 13 0 7 10 2 12 5 3 6 11 8 14 4
+Individual 135:  7 13 2 14 6 0 3 4 1 9 8 11 10 12 5
+Individual 136:  3 11 12 9 4 5 6 7 8 10 13 14 0 1 2
+Individual 137:  6 2 1 9 7 14 0 10 3 4 11 12 13 5 8
+Individual 138:  5 6 7 8 0 10 11 12 9 13 14 1 2 3 4
+Individual 139:  5 7 2 13 1 10 14 3 11 0 8 9 4 12 6
+Individual 140:  13 7 8 14 0 1 2 11 3 9 4 5 6 10 12
+Individual 141:  6 0 12 1 5 7 10 3 8 14 4 9 11 13 2
+Individual 142:  1 11 8 2 3 9 4 5 12 7 10 13 6 14 0
+Individual 143:  7 13 14 4 6 5 10 8 9 11 12 0 1 2 3
+Individual 144:  2 6 12 3 8 14 11 4 1 9 10 5 7 13 0
+Individual 145:  4 12 1 10 2 7 6 5 8 9 13 0 3 11 14
+Individual 146:  11 14 12 9 2 13 0 5 6 1 3 4 7 10 8
+Individual 147:  6 7 4 14 1 13 0 2 3 8 9 10 5 11 12
+time() 1588671693
+Individual 185:  4 5 7 6 1 9 2 8 10 11 12 13 3 14 0
+Individual 186:  8 6 0 10 14 1 3 2 13 4 9 7 11 12 5
+Individual 187:  4 10 6 11 8 9 12 2 1 5 13 7 3 14 0
+Individual 188:  7 8 9 14 2 13 0 1 6 10 3 11 4 12 5
+Individual 189:  7 12 8 14 0 9 1 13 10 11 2 3 4 5 6
+Individual 190:  5 10 14 4 9 11 12 1 7 0 8 13 6 2 3
+Individual 191:  11 5 2 12 13 3 6 10 7 1 9 14 8 0 4
+Individual 192:  14 3 7 6 8 1 0 2 4 9 10 11 12 5 13
+Individual 193:  8 11 13 10 9 12 5 6 14 0 1 7 2 3 4
+Individual 194:  4 5 6 12 3 7 8 9 13 10 2 11 14 0 1
+Individual 195:  4 7 0 2 9 1 3 14 13 5 6 11 8 12 10
+Individual 196:  7 8 0 5 11 3 10 2 14 1 4 6 13 9 12
+Individual 197:  10 2 6 3 11 0 12 14 1 8 13 4 5 9 7
+Individual 198:  14 1 6 7 13 10 2 0 12 3 4 5 9 8 11
+Individual 199:  1 2 7 14 11 4 8 13 3 0 9 10 12 5 6
+Individual 200:  9 10 12 0 2 11 13 4 14 1 3 5 6 7 8
+Individual 201:  11 0 10 3 6 7 14 13 4 5 12 8 9 1 2
+Individual 202:  7 1 10 4 9 5 0 6 8 3 11 12 14 2 13
+Individual 203:  8 13 10 3 9 11 1 12 7 14 4 0 2 5 6
+Individual 204:  1 6 13 3 11 7 8 4 5 9 10 14 12 0 2
+Individual 205:  14 6 13 2 1 7 11 10 8 12 9 3 0 4 5
+Individual 206:  4 9 0 2 5 3 1 11 13 6 7 8 12 14 10
+Individual 207:  4 6 0 3 1 8 2 5 10 7 13 11 9 14 12
+Individual 208:  4 2 13 11 12 3 0 14 6 1 5 7 10 8 9
+Individual 209:  4 9 14 11 5 6 12 13 10 7 0 1 2 3 8
+Individual 210:  6 13 7 5 1 10 0 8 9 11 14 2 12 3 4
+Individual 211:  2 5 6 8 1 3 0 12 4 9 7 10 11 14 13
+Individual 212:  6 5 7 13 2 8 9 3 10 11 1 12 14 4 0
+Individual 213:  5 3 6 11 12 13 14 0 10 7 1 8 2 4 9
+Individual 214:  3 6 11 0 12 14 13 1 8 5 2 9 4 7 10
+Individual 215:  3 2 6 0 13 10 14 4 1 9 8 5 11 12 7
+Individual 216:  14 6 3 2 7 8 9 11 12 10 4 13 5 0 1
+Individual 217:  6 9 8 5 10 13 0 1 11 7 2 3 12 14 4
+Individual 218:  2 0 10 12 3 8 13 11 4 9 5 14 6 1 7
+Individual 219:  1 14 5 2 11 6 0 3 7 4 10 8 9 12 13
+Individual 220:  11 1 2 6 7 12 14 3 0 10 13 4 9 8 5
+Individual 221:  13 8 2 3 9 5 10 0 11 12 14 4 1 6 7
+time() 1588671693
+Individual 0:  13 1 12 10 8 11 2 14 9 3 4 7 5 6 0
+Individual 1:  1 0 6 7 2 11 8 12 9 3 5 4 13 10 14
+Individual 2:  14 12 13 3 0 1 2 4 5 7 9 6 8 10 11
+Individual 3:  7 8 14 5 0 9 1 2 6 11 3 4 10 12 13
+Individual 4:  0 1 14 12 11 5 2 9 13 3 10 4 6 7 8
+Individual 5:  12 14 0 3 5 7 4 6 8 9 10 11 13 1 2
+Individual 6:  12 0 11 3 4 7 1 6 9 14 2 10 5 13 8
+Individual 7:  6 2 3 12 13 7 11 1 5 14 4 0 8 9 10
+Individual 8:  10 9 6 7 12 11 8 5 13 14 0 1 2 3 4
+Individual 9:  5 1 8 14 0 13 6 2 3 4 7 9 10 11 12
+Individual 10:  10 9 6 8 11 12 13 7 1 5 14 0 2 3 4
+Individual 11:  5 13 10 14 4 9 6 2 11 3 7 8 12 0 1
+Individual 12:  7 11 2 13 5 3 9 1 8 10 14 12 0 4 6
+Individual 13:  8 3 6 4 9 11 5 13 14 10 12 0 1 7 2
+Individual 14:  3 4 9 12 2 6 14 5 0 8 7 1 10 11 13
+Individual 15:  0 5 14 1 2 9 3 12 4 7 13 6 8 10 11
+Individual 16:  2 3 14 4 1 8 10 7 11 12 0 5 6 9 13
+Individual 17:  5 0 11 4 6 12 7 8 1 13 9 14 2 3 10
+Individual 18:  0 6 2 14 9 10 8 11 3 12 7 13 1 4 5
+Individual 19:  3 4 11 14 1 9 5 13 6 7 10 12 0 2 8
+Individual 20:  10 14 6 12 7 8 0 9 4 3 2 5 13 11 1
+Individual 21:  9 11 5 12 2 6 7 13 14 1 10 0 4 8 3
+Individual 22:  4 1 5 2 6 3 7 8 9 13 0 10 11 14 12
+Individual 23:  1 0 14 7 12 2 5 10 3 4 6 11 8 9 13
+Individual 24:  8 5 9 6 14 7 10 1 12 11 0 4 2 3 13
+Individual 25:  11 0 10 12 7 14 4 13 1 2 8 3 5 6 9
+Individual 26:  6 9 4 7 8 11 14 1 12 3 5 10 13 0 2
+Individual 27:  3 6 4 13 8 5 14 0 9 1 10 7 11 12 2
+Individual 28:  5 6 3 2 14 10 13 0 4 7 8 9 11 1 12
+Individual 29:  1 10 8 12 9 2 0 14 6 3 4 11 7 5 13
+Individual 30:  1 2 14 12 4 13 0 3 5 6 7 11 8 9 10
+Individual 31:  11 5 14 4 2 0 12 9 1 6 10 7 8 13 3
+Individual 32:  12 10 13 11 14 9 2 0 1 5 8 3 4 6 7
+Individual 33:  5 6 9 11 2 12 13 0 14 3 1 7 10 4 8
+Individual 34:  11 12 2 9 0 1 4 3 14 8 5 10 6 7 13
+Individual 35:  6 7 9 1 2 3 4 8 10 5 11 12 0 13 14
+Individual 36:  7 8 2 1 9 10 3 5 12 11 6 4 13 14 0
+time() 1588671693
+time() 1588671693
+Individual 74:  14 4 5 3 6 8 7 13 0 9 11 12 1 2 10
+Individual 75:  12 6 2 13 10 9 11 7 14 0 3 1 4 5 8
+Individual 76:  2 14 7 0 9 12 1 8 3 4 13 5 6 10 11
+Individual 77:  12 9 4 14 0 1 2 10 7 13 5 3 6 11 8
+Individual 78:  7 4 8 14 3 5 6 10 2 9 11 0 12 13 1
+Individual 148:  7 12 2 11 3 4 5 6 1 8 14 9 10 13 0
+Individual 149:  6 1 2 3 4 5 0 11 7 8 9 14 10 12 13
+Individual 79:  1 2 12 5 3 4 6 10 13 7 0 11 8 9 14
+Individual 80:  1 2 3 9 4 13 5 12 8 6 7 10 11 14 0
+Individual 81:  0 13 3 14 4 12 9 1 2 8 5 6 11 7 10
+Individual 82:  2 4 12 5 14 6 7 10 3 8 9 13 0 1 11
+Individual 83:  0 1 2 10 5 6 14 3 7 13 4 8 12 11 9
+Individual 84:  14 5 11 3 10 2 9 6 13 4 12 0 7 8 1
+Individual 85:  6 3 13 7 8 10 5 9 2 4 11 1 12 14 0
+Individual 86:  6 14 9 2 3 11 5 12 4 7 8 10 13 0 1
+Individual 150:  13 12 6 8 0 9 11 7 10 4 5 14 1 2 3
+Individual 151:  14 12 8 7 13 1 10 6 0 2 3 9 4 5 11
+Individual 87:  8 9 4 14 10 2 11 5 12 13 0 6 1 3 7
+Individual 88:  2 14 4 11 8 6 0 13 10 9 12 3 1 5 7
+Individual 152:  11 7 1 9 0 2 3 4 5 10 14 6 8 12 13
+Individual 153:  6 10 8 7 2 14 0 12 5 13 1 4 11 9 3
+Individual 154:  0 11 5 1 13 12 3 2 4 6 7 14 8 9 10
+Individual 155:  11 6 4 5 7 8 3 9 12 0 1 10 13 14 2
+Individual 156:  3 4 0 1 5 13 12 2 6 14 11 7 8 9 10
+Individual 157:  12 7 13 2 3 4 1 8 6 14 9 0 10 5 11
+Individual 158:  12 14 5 13 0 2 3 11 10 9 1 6 4 7 8
+Individual 159:  2 8 9 1 3 12 4 10 11 5 7 13 0 14 6
+Individual 160:  2 4 7 14 3 6 9 12 10 5 8 11 13 0 1
+Individual 161:  4 3 6 5 7 8 9 14 10 13 1 2 11 12 0
+Individual 89:  1 11 7 13 10 0 2 4 14 8 9 12 5 6 3
+Individual 90:  9 0 6 13 3 14 4 2 5 1 12 7 10 8 11
+Individual 91:  0 13 4 7 11 6 1 12 2 14 3 10 5 8 9
+Individual 92:  4 10 8 2 9 3 11 5 6 13 12 14 0 7 1
+Individual 93:  4 13 12 0 6 1 7 14 2 8 3 5 11 9 10
+Individual 94:  4 11 5 13 14 6 1 7 10 0 12 2 3 8 9
+Individual 95:  8 4 3 12 11 1 13 9 6 2 10 14 5 7 0
+Individual 96:  12 10 13 9 0 11 7 8 14 1 2 6 3 4 5
+Individual 97:  13 9 2 10 7 14 11 12 0 3 1 8 4 5 6
+Individual 98:  5 13 1 2 0 3 6 7 9 14 4 10 8 11 12
+Individual 162:  1 10 14 8 2 9 7 11 5 3 6 4 12 13 0
+Individual 163:  10 12 7 1 9 11 2 4 13 5 3 6 14 8 0
+Individual 164:  9 4 0 1 5 8 2 6 7 13 10 3 11 12 14
+Individual 99:  3 0 5 6 9 12 4 13 10 11 7 1 2 14 8
+Individual 100:  8 6 0 9 10 1 11 14 7 12 13 2 3 4 5
+Individual 165:  14 13 0 6 7 2 10 8 9 1 4 3 5 11 12
+Individual 166:  14 4 0 6 12 5 1 7 8 3 9 10 13 2 11
+Individual 167:  1 4 14 8 10 5 11 12 6 9 2 13 0 3 7
+Individual 168:  11 10 2 3 1 14 7 4 5 8 12 0 6 9 13
+Individual 169:  0 2 8 14 11 12 13 1 9 3 7 4 5 10 6
+Individual 101:  2 13 10 0 11 4 12 5 8 14 1 6 7 3 9
+Individual 102:  1 10 14 2 11 0 8 7 3 4 12 5 9 6 13
+Individual 103:  10 12 11 5 13 6 1 2 14 3 7 0 8 4 9
+Individual 104:  1 7 14 2 0 10 3 8 9 11 4 5 6 12 13
+Individual 105:  11 9 12 7 14 1 0 8 2 10 13 3 4 5 6
+Individual 106:  10 5 8 9 13 0 11 14 12 6 1 2 3 4 7
+Individual 170:  2 11 10 4 14 12 13 6 5 0 7 1 8 3 9
+Individual 171:  10 5 6 3 7 8 14 9 11 0 4 13 12 1 2
+Individual 172:  2 3 4 5 13 1 8 9 14 12 0 6 7 10 11
+Individual 173:  8 6 1 5 2 13 14 9 7 4 10 3 11 12 0
+Individual 174:  1 13 12 10 2 11 3 4 5 6 0 7 8 14 9
+Individual 175:  3 12 5 6 2 7 4 0 1 8 9 10 13 11 14
+Individual 176:  1 8 9 13 10 4 11 14 6 3 7 0 5 12 2
+Individual 177:  10 3 8 0 9 4 14 5 6 1 2 7 11 12 13
+Individual 178:  12 13 7 8 3 2 11 4 0 9 6 1 10 5 14
+Individual 179:  11 13 3 4 14 12 7 0 8 5 6 9 10 1 2
+Individual 107:  3 7 2 8 14 9 10 5 11 4 12 6 13 0 1
+Individual 108:  13 8 11 14 9 10 0 5 1 2 3 4 6 7 12
+Individual 109:  5 10 3 14 4 9 0 6 1 2 13 7 11 12 8
+Individual 110:  10 8 6 13 7 0 9 11 12 14 1 2 3 4 5
+Individual 180:  3 4 9 2 10 12 5 13 0 14 1 6 7 8 11
+Individual 181:  12 3 6 1 0 5 7 14 11 13 9 8 10 2 4
+Individual 182:  1 8 10 11 2 12 7 9 3 14 13 4 5 0 6
+Individual 183:  5 14 11 12 0 3 9 13 4 1 10 2 6 7 8
+Individual 184:  4 1 2 6 3 5 10 11 7 8 9 12 13 14 0
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+Allocating fitness array on GPU
+The global minimum at iter 1 is 454.422437  at index 141 
+The global minimum at iter 2 is 658.824913  at index 101 
+The global minimum at iter 3 is 658.824913  at index 101 
+The global minimum at iter 4 is 658.824913  at index 101 
+The global minimum at iter 5 is 658.824913  at index 101 
+The global minimum at iter 6 is 658.824913  at index 101 
+The global minimum at iter 7 is 658.824913  at index 101 
+The global minimum at iter 8 is 658.824913  at index 101 
+The global minimum at iter 9 is 658.824913  at index 101 
+The global minimum at iter 10 is 658.824913  at index 101 
+The global minimum at iter 11 is 658.824913  at index 101 
+The global minimum at iter 12 is 658.824913  at index 101 
+The global minimum at iter 13 is 658.824913  at index 101 
+The global minimum at iter 14 is 658.824913  at index 101 
+The global minimum at iter 15 is 658.824913  at index 101 
+The global minimum at iter 16 is 658.824913  at index 101 
+The global minimum at iter 17 is 658.824913  at index 101 
+The global minimum at iter 18 is 658.824913  at index 101 
+The global minimum at iter 19 is 658.824913  at index 101 
+The global minimum at iter 20 is 658.824913  at index 101 
+The global minimum at iter 21 is 658.824913  at index 101 
+The global minimum at iter 22 is 658.824913  at index 101 
+The global minimum at iter 23 is 658.824913  at index 101 
+The global minimum at iter 24 is 658.824913  at index 101 
+The global minimum at iter 25 is 658.824913  at index 101 
+The global minimum at iter 26 is 658.824913  at index 101 
+The global minimum at iter 27 is 658.824913  at index 101 
+The global minimum at iter 28 is 658.824913  at index 101 
+The global minimum at iter 29 is 658.824913  at index 101 
+The global minimum at iter 30 is 658.824913  at index 101 
+The global minimum at iter 31 is 658.824913  at index 101 
+The global minimum at iter 32 is 658.824913  at index 101 
+The global minimum at iter 33 is 658.824913  at index 101 
+The global minimum at iter 34 is 658.824913  at index 101 
+The global minimum at iter 35 is 658.824913  at index 101 
+The global minimum at iter 36 is 658.824913  at index 101 
+The global minimum at iter 37 is 658.824913  at index 101 
+The global minimum at iter 38 is 658.824913  at index 101 
+The global minimum at iter 39 is 658.824913  at index 101 
+The global minimum at iter 40 is 658.824913  at index 101 
+The global minimum at iter 41 is 658.824913  at index 101 
+The global minimum at iter 42 is 658.824913  at index 101 
+The global minimum at iter 43 is 658.824913  at index 101 
+The global minimum at iter 44 is 658.824913  at index 101 
+The global minimum at iter 45 is 658.824913  at index 101 
+The global minimum at iter 46 is 658.824913  at index 101 
+The global minimum at iter 47 is 658.824913  at index 101 
+The global minimum at iter 48 is 658.824913  at index 101 
+The global minimum at iter 49 is 658.824913  at index 101 
+The global minimum at iter 50 is 658.824913  at index 101 
+The global minimum at iter 51 is 658.824913  at index 101 
+The global minimum at iter 52 is 658.824913  at index 101 
+The global minimum at iter 53 is 658.824913  at index 101 
+The global minimum at iter 54 is 658.824913  at index 101 
+The global minimum at iter 55 is 658.824913  at index 101 
+The global minimum at iter 56 is 658.824913  at index 101 
+The global minimum at iter 57 is 658.824913  at index 101 
+The global minimum at iter 58 is 658.824913  at index 101 
+The global minimum at iter 59 is 658.824913  at index 101 
+The global minimum at iter 60 is 658.824913  at index 101 
+The global minimum at iter 61 is 658.824913  at index 101 
+The global minimum at iter 62 is 658.824913  at index 101 
+The global minimum at iter 63 is 658.824913  at index 101 
+The global minimum at iter 64 is 658.824913  at index 101 
+The global minimum at iter 65 is 658.824913  at index 101 
+The global minimum at iter 66 is 658.824913  at index 101 
+The global minimum at iter 67 is 658.824913  at index 101 
+The global minimum at iter 68 is 658.824913  at index 101 
+The global minimum at iter 69 is 658.824913  at index 101 
+The global minimum at iter 70 is 658.824913  at index 101 
+The global minimum at iter 71 is 658.824913  at index 101 
+The global minimum at iter 72 is 658.824913  at index 101 
+The global minimum at iter 73 is 658.824913  at index 101 
+The global minimum at iter 74 is 658.824913  at index 101 
+The global minimum at iter 75 is 658.824913  at index 101 
+The global minimum at iter 76 is 658.824913  at index 101 
+The global minimum at iter 77 is 658.824913  at index 101 
+The global minimum at iter 78 is 658.824913  at index 101 
+The global minimum at iter 79 is 658.824913  at index 101 
+The global minimum at iter 80 is 658.824913  at index 101 
+The global minimum at iter 81 is 658.824913  at index 101 
+The global minimum at iter 82 is 658.824913  at index 101 
+The global minimum at iter 83 is 658.824913  at index 101 
+The global minimum at iter 84 is 658.824913  at index 101 
+The global minimum at iter 85 is 658.824913  at index 101 
+The global minimum at iter 86 is 658.824913  at index 101 
+The global minimum at iter 87 is 658.824913  at index 101 
+The global minimum at iter 88 is 658.824913  at index 101 
+The global minimum at iter 89 is 658.824913  at index 101 
+The global minimum at iter 90 is 658.824913  at index 101 
+The global minimum at iter 91 is 658.824913  at index 101 
+The global minimum at iter 92 is 658.824913  at index 101 
+The global minimum at iter 93 is 658.824913  at index 101 
+The global minimum at iter 94 is 658.824913  at index 101 
+The global minimum at iter 95 is 658.824913  at index 101 
+The global minimum at iter 96 is 658.824913  at index 101 
+The global minimum at iter 97 is 658.824913  at index 101 
+The global minimum at iter 98 is 658.824913  at index 101 
+The global minimum at iter 99 is 658.824913  at index 101 
+The global minimum at iter 100 is 658.824913  at index 101 
+The global minimum at iter 101 is 658.824913  at index 101 
+The global minimum at iter 102 is 658.824913  at index 101 
+The global minimum at iter 103 is 658.824913  at index 101 
+The global minimum at iter 104 is 658.824913  at index 101 
+The global minimum at iter 105 is 658.824913  at index 101 
+The global minimum at iter 106 is 658.824913  at index 101 
+The global minimum at iter 107 is 658.824913  at index 101 
+The global minimum at iter 108 is 658.824913  at index 101 
+The global minimum at iter 109 is 658.824913  at index 101 
+The global minimum at iter 110 is 658.824913  at index 101 
+The global minimum at iter 111 is 658.824913  at index 101 
+The global minimum at iter 112 is 658.824913  at index 101 
+The global minimum at iter 113 is 658.824913  at index 101 
+The global minimum at iter 114 is 658.824913  at index 101 
+The global minimum at iter 115 is 658.824913  at index 101 
+The global minimum at iter 116 is 658.824913  at index 101 
+The global minimum at iter 117 is 658.824913  at index 101 
+The global minimum at iter 118 is 658.824913  at index 101 
+The global minimum at iter 119 is 658.824913  at index 101 
+The global minimum at iter 120 is 658.824913  at index 101 
+The global minimum at iter 121 is 658.824913  at index 101 
+The global minimum at iter 122 is 658.824913  at index 101 
+The global minimum at iter 123 is 658.824913  at index 101 
+The global minimum at iter 124 is 658.824913  at index 101 
+The global minimum at iter 125 is 658.824913  at index 101 
+The global minimum at iter 126 is 658.824913  at index 101 
+The global minimum at iter 127 is 658.824913  at index 101 
+The global minimum at iter 128 is 658.824913  at index 101 
+The global minimum at iter 129 is 658.824913  at index 101 
+The global minimum at iter 130 is 658.824913  at index 101 
+The global minimum at iter 131 is 658.824913  at index 101 
+The global minimum at iter 132 is 658.824913  at index 101 
+The global minimum at iter 133 is 658.824913  at index 101 
+The global minimum at iter 134 is 658.824913  at index 101 
+The global minimum at iter 135 is 658.824913  at index 101 
+The global minimum at iter 136 is 658.824913  at index 101 
+The global minimum at iter 137 is 658.824913  at index 101 
+The global minimum at iter 138 is 658.824913  at index 101 
+The global minimum at iter 139 is 658.824913  at index 101 
+The global minimum at iter 140 is 658.824913  at index 101 
+The global minimum at iter 141 is 658.824913  at index 101 
+The global minimum at iter 142 is 658.824913  at index 101 
+The global minimum at iter 143 is 658.824913  at index 101 
+The global minimum at iter 144 is 658.824913  at index 101 
+The global minimum at iter 145 is 658.824913  at index 101 
+The global minimum at iter 146 is 658.824913  at index 101 
+The global minimum at iter 147 is 658.824913  at index 101 
+The global minimum at iter 148 is 658.824913  at index 101 
+The global minimum at iter 149 is 658.824913  at index 101 
+The global minimum at iter 150 is 658.824913  at index 101 
+The global minimum at iter 151 is 658.824913  at index 101 
+The global minimum at iter 152 is 658.824913  at index 101 
+The global minimum at iter 153 is 658.824913  at index 101 
+The global minimum at iter 154 is 658.824913  at index 101 
+The global minimum at iter 155 is 658.824913  at index 101 
+The global minimum at iter 156 is 658.824913  at index 101 
+The global minimum at iter 157 is 658.824913  at index 101 
+The global minimum at iter 158 is 658.824913  at index 101 
+The global minimum at iter 159 is 658.824913  at index 101 
+The global minimum at iter 160 is 658.824913  at index 101 
+The global minimum at iter 161 is 658.824913  at index 101 
+The global minimum at iter 162 is 658.824913  at index 101 
+The global minimum at iter 163 is 658.824913  at index 101 
+The global minimum at iter 164 is 658.824913  at index 101 
+The global minimum at iter 165 is 658.824913  at index 101 
+The global minimum at iter 166 is 658.824913  at index 101 
+The global minimum at iter 167 is 658.824913  at index 101 
+The global minimum at iter 168 is 658.824913  at index 101 
+The global minimum at iter 169 is 658.824913  at index 101 
+The global minimum at iter 170 is 658.824913  at index 101 
+The global minimum at iter 171 is 658.824913  at index 101 
+The global minimum at iter 172 is 658.824913  at index 101 
+The global minimum at iter 173 is 658.824913  at index 101 
+The global minimum at iter 174 is 658.824913  at index 101 
+The global minimum at iter 175 is 658.824913  at index 101 
+The global minimum at iter 176 is 658.824913  at index 101 
+The global minimum at iter 177 is 658.824913  at index 101 
+The global minimum at iter 178 is 658.824913  at index 101 
+The global minimum at iter 179 is 658.824913  at index 101 
+The global minimum at iter 180 is 658.824913  at index 101 
+The global minimum at iter 181 is 658.824913  at index 101 
+The global minimum at iter 182 is 658.824913  at index 101 
+The global minimum at iter 183 is 658.824913  at index 101 
+The global minimum at iter 184 is 658.824913  at index 101 
+The global minimum at iter 185 is 658.824913  at index 101 
+The global minimum at iter 186 is 658.824913  at index 101 
+The global minimum at iter 187 is 658.824913  at index 101 
+The global minimum at iter 188 is 658.824913  at index 101 
+The global minimum at iter 189 is 658.824913  at index 101 
+The global minimum at iter 190 is 658.824913  at index 101 
+The global minimum at iter 191 is 658.824913  at index 101 
+The global minimum at iter 192 is 658.824913  at index 101 
+The global minimum at iter 193 is 658.824913  at index 101 
+The global minimum at iter 194 is 658.824913  at index 101 
+The global minimum at iter 195 is 658.824913  at index 101 
+The global minimum at iter 196 is 658.824913  at index 101 
+The global minimum at iter 197 is 658.824913  at index 101 
+The global minimum at iter 198 is 658.824913  at index 101 
+The global minimum at iter 199 is 658.824913  at index 101 
+The global minimum at iter 200 is 658.824913  at index 101 
+The global minimum at iter 201 is 658.824913  at index 101 
+The global minimum at iter 202 is 658.824913  at index 101 
+The global minimum at iter 203 is 658.824913  at index 101 
+The global minimum at iter 204 is 658.824913  at index 101 
+The global minimum at iter 205 is 658.824913  at index 101 
+The global minimum at iter 206 is 658.824913  at index 101 
+The global minimum at iter 207 is 658.824913  at index 101 
+The global minimum at iter 208 is 658.824913  at index 101 
+The global minimum at iter 209 is 658.824913  at index 101 
+The global minimum at iter 210 is 658.824913  at index 101 
+The global minimum at iter 211 is 658.824913  at index 101 
+The global minimum at iter 212 is 658.824913  at index 101 
+The global minimum at iter 213 is 658.824913  at index 101 
+The global minimum at iter 214 is 658.824913  at index 101 
+The global minimum at iter 215 is 658.824913  at index 101 
+The global minimum at iter 216 is 658.824913  at index 101 
+The global minimum at iter 217 is 658.824913  at index 101 
+The global minimum at iter 218 is 658.824913  at index 101 
+The global minimum at iter 219 is 658.824913  at index 101 
+The global minimum at iter 220 is 658.824913  at index 101 
+The global minimum at iter 221 is 658.824913  at index 101 
+The global minimum at iter 222 is 658.824913  at index 101 
+The global minimum at iter 223 is 658.824913  at index 101 
+The global minimum at iter 224 is 658.824913  at index 101 
+The global minimum at iter 225 is 658.824913  at index 101 
+The global minimum at iter 226 is 658.824913  at index 101 
+The global minimum at iter 227 is 658.824913  at index 101 
+The global minimum at iter 228 is 658.824913  at index 101 
+The global minimum at iter 229 is 658.824913  at index 101 
+The global minimum at iter 230 is 658.824913  at index 101 
+The global minimum at iter 231 is 658.824913  at index 101 
+The global minimum at iter 232 is 658.824913  at index 101 
+The global minimum at iter 233 is 658.824913  at index 101 
+The global minimum at iter 234 is 658.824913  at index 101 
+The global minimum at iter 235 is 658.824913  at index 101 
+The global minimum at iter 236 is 658.824913  at index 101 
+The global minimum at iter 237 is 658.824913  at index 101 
+The global minimum at iter 238 is 658.824913  at index 101 
+The global minimum at iter 239 is 658.824913  at index 101 
+The global minimum at iter 240 is 658.824913  at index 101 
+The global minimum at iter 241 is 658.824913  at index 101 
+The global minimum at iter 242 is 658.824913  at index 101 
+The global minimum at iter 243 is 658.824913  at index 101 
+The global minimum at iter 244 is 658.824913  at index 101 
+The global minimum at iter 245 is 658.824913  at index 101 
+The global minimum at iter 246 is 658.824913  at index 101 
+The global minimum at iter 247 is 658.824913  at index 101 
+The global minimum at iter 248 is 658.824913  at index 101 
+The global minimum at iter 249 is 658.824913  at index 101 
+The global minimum at iter 250 is 658.824913  at index 101 
+The global minimum at iter 251 is 658.824913  at index 101 
+The global minimum at iter 252 is 658.824913  at index 101 
+The global minimum at iter 253 is 658.824913  at index 101 
+The global minimum at iter 254 is 658.824913  at index 101 
+The global minimum at iter 255 is 658.824913  at index 101 
+The global minimum at iter 256 is 658.824913  at index 101 
+The global minimum at iter 257 is 658.824913  at index 101 
+The global minimum at iter 258 is 658.824913  at index 101 
+The global minimum at iter 259 is 658.824913  at index 101 
+The global minimum at iter 260 is 658.824913  at index 101 
+The global minimum at iter 261 is 658.824913  at index 101 
+The global minimum at iter 262 is 658.824913  at index 101 
+The global minimum at iter 263 is 658.824913  at index 101 
+The global minimum at iter 264 is 658.824913  at index 101 
+The global minimum at iter 265 is 658.824913  at index 101 
+The global minimum at iter 266 is 658.824913  at index 101 
+The global minimum at iter 267 is 658.824913  at index 101 
+The global minimum at iter 268 is 658.824913  at index 101 
+The global minimum at iter 269 is 658.824913  at index 101 
+The global minimum at iter 270 is 658.824913  at index 101 
+The global minimum at iter 271 is 658.824913  at index 101 
+The global minimum at iter 272 is 658.824913  at index 101 
+The global minimum at iter 273 is 658.824913  at index 101 
+The global minimum at iter 274 is 658.824913  at index 101 
+The global minimum at iter 275 is 658.824913  at index 101 
+The global minimum at iter 276 is 658.824913  at index 101 
+The global minimum at iter 277 is 658.824913  at index 101 
+The global minimum at iter 278 is 658.824913  at index 101 
+The global minimum at iter 279 is 658.824913  at index 101 
+The global minimum at iter 280 is 658.824913  at index 101 
+The global minimum at iter 281 is 658.824913  at index 101 
+The global minimum at iter 282 is 658.824913  at index 101 
+The global minimum at iter 283 is 658.824913  at index 101 
+The global minimum at iter 284 is 658.824913  at index 101 
+The global minimum at iter 285 is 658.824913  at index 101 
+The global minimum at iter 286 is 658.824913  at index 101 
+The global minimum at iter 287 is 658.824913  at index 101 
+The global minimum at iter 288 is 658.824913  at index 101 
+The global minimum at iter 289 is 658.824913  at index 101 
+The global minimum at iter 290 is 658.824913  at index 101 
+The global minimum at iter 291 is 658.824913  at index 101 
+The global minimum at iter 292 is 658.824913  at index 101 
+The global minimum at iter 293 is 658.824913  at index 101 
+The global minimum at iter 294 is 658.824913  at index 101 
+The global minimum at iter 295 is 658.824913  at index 101 
+The global minimum at iter 296 is 658.824913  at index 101 
+The global minimum at iter 297 is 658.824913  at index 101 
+The global minimum at iter 298 is 658.824913  at index 101 
+The global minimum at iter 299 is 658.824913  at index 101 
+The global minimum at iter 300 is 658.824913  at index 101 
+The global minimum at iter 301 is 658.824913  at index 101 
+The global minimum at iter 302 is 658.824913  at index 101 
+The global minimum at iter 303 is 658.824913  at index 101 
+The global minimum at iter 304 is 658.824913  at index 101 
+The global minimum at iter 305 is 658.824913  at index 101 
+The global minimum at iter 306 is 658.824913  at index 101 
+The global minimum at iter 307 is 658.824913  at index 101 
+The global minimum at iter 308 is 658.824913  at index 101 
+The global minimum at iter 309 is 658.824913  at index 101 
+The global minimum at iter 310 is 658.824913  at index 101 
+The global minimum at iter 311 is 658.824913  at index 101 
+The global minimum at iter 312 is 658.824913  at index 101 
+The global minimum at iter 313 is 658.824913  at index 101 
+The global minimum at iter 314 is 658.824913  at index 101 
+The global minimum at iter 315 is 658.824913  at index 101 
+The global minimum at iter 316 is 658.824913  at index 101 
+The global minimum at iter 317 is 658.824913  at index 101 
+The global minimum at iter 318 is 658.824913  at index 101 
+The global minimum at iter 319 is 658.824913  at index 101 
+The global minimum at iter 320 is 658.824913  at index 101 
+The global minimum at iter 321 is 658.824913  at index 101 
+The global minimum at iter 322 is 658.824913  at index 101 
+The global minimum at iter 323 is 658.824913  at index 101 
+The global minimum at iter 324 is 658.824913  at index 101 
+The global minimum at iter 325 is 658.824913  at index 101 
+The global minimum at iter 326 is 658.824913  at index 101 
+The global minimum at iter 327 is 658.824913  at index 101 
+The global minimum at iter 328 is 658.824913  at index 101 
+The global minimum at iter 329 is 658.824913  at index 101 
+The global minimum at iter 330 is 658.824913  at index 101 
+The global minimum at iter 331 is 658.824913  at index 101 
+The global minimum at iter 332 is 658.824913  at index 101 
+The global minimum at iter 333 is 658.824913  at index 101 
+The global minimum at iter 334 is 658.824913  at index 101 
+The global minimum at iter 335 is 658.824913  at index 101 
+The global minimum at iter 336 is 658.824913  at index 101 
+The global minimum at iter 337 is 658.824913  at index 101 
+The global minimum at iter 338 is 658.824913  at index 101 
+The global minimum at iter 339 is 658.824913  at index 101 
+The global minimum at iter 340 is 658.824913  at index 101 
+The global minimum at iter 341 is 658.824913  at index 101 
+The global minimum at iter 342 is 658.824913  at index 101 
+The global minimum at iter 343 is 658.824913  at index 101 
+The global minimum at iter 344 is 658.824913  at index 101 
+The global minimum at iter 345 is 658.824913  at index 101 
+The global minimum at iter 346 is 658.824913  at index 101 
+The global minimum at iter 347 is 658.824913  at index 101 
+The global minimum at iter 348 is 658.824913  at index 101 
+The global minimum at iter 349 is 658.824913  at index 101 
+The global minimum at iter 350 is 658.824913  at index 101 
+The global minimum at iter 351 is 658.824913  at index 101 
+The global minimum at iter 352 is 658.824913  at index 101 
+The global minimum at iter 353 is 658.824913  at index 101 
+The global minimum at iter 354 is 658.824913  at index 101 
+The global minimum at iter 355 is 658.824913  at index 101 
+The global minimum at iter 356 is 658.824913  at index 101 
+The global minimum at iter 357 is 658.824913  at index 101 
+The global minimum at iter 358 is 658.824913  at index 101 
+The global minimum at iter 359 is 658.824913  at index 101 
+The global minimum at iter 360 is 658.824913  at index 101 
+The global minimum at iter 361 is 658.824913  at index 101 
+The global minimum at iter 362 is 658.824913  at index 101 
+The global minimum at iter 363 is 658.824913  at index 101 
+The global minimum at iter 364 is 658.824913  at index 101 
+The global minimum at iter 365 is 658.824913  at index 101 
+The global minimum at iter 366 is 658.824913  at index 101 
+The global minimum at iter 367 is 658.824913  at index 101 
+The global minimum at iter 368 is 658.824913  at index 101 
+The global minimum at iter 369 is 658.824913  at index 101 
+The global minimum at iter 370 is 658.824913  at index 101 
+The global minimum at iter 371 is 658.824913  at index 101 
+The global minimum at iter 372 is 658.824913  at index 101 
+The global minimum at iter 373 is 658.824913  at index 101 
+The global minimum at iter 374 is 658.824913  at index 101 
+The global minimum at iter 375 is 658.824913  at index 101 
+The global minimum at iter 376 is 658.824913  at index 101 
+The global minimum at iter 377 is 658.824913  at index 101 
+The global minimum at iter 378 is 658.824913  at index 101 
+The global minimum at iter 379 is 658.824913  at index 101 
+The global minimum at iter 380 is 658.824913  at index 101 
+The global minimum at iter 381 is 658.824913  at index 101 
+The global minimum at iter 382 is 658.824913  at index 101 
+The global minimum at iter 383 is 658.824913  at index 101 
+The global minimum at iter 384 is 658.824913  at index 101 
+The global minimum at iter 385 is 658.824913  at index 101 
+The global minimum at iter 386 is 658.824913  at index 101 
+The global minimum at iter 387 is 658.824913  at index 101 
+The global minimum at iter 388 is 658.824913  at index 101 
+The global minimum at iter 389 is 658.824913  at index 101 
+The global minimum at iter 390 is 658.824913  at index 101 
+The global minimum at iter 391 is 658.824913  at index 101 
+The global minimum at iter 392 is 658.824913  at index 101 
+The global minimum at iter 393 is 658.824913  at index 101 
+The global minimum at iter 394 is 658.824913  at index 101 
+The global minimum at iter 395 is 658.824913  at index 101 
+The global minimum at iter 396 is 658.824913  at index 101 
+The global minimum at iter 397 is 658.824913  at index 101 
+The global minimum at iter 398 is 658.824913  at index 101 
+The global minimum at iter 399 is 658.824913  at index 101 
+The global minimum at iter 400 is 658.824913  at index 101 
+The global minimum at iter 401 is 658.824913  at index 101 
+The global minimum at iter 402 is 658.824913  at index 101 
+The global minimum at iter 403 is 658.824913  at index 101 
+The global minimum at iter 404 is 658.824913  at index 101 
+The global minimum at iter 405 is 658.824913  at index 101 
+The global minimum at iter 406 is 658.824913  at index 101 
+The global minimum at iter 407 is 658.824913  at index 101 
+The global minimum at iter 408 is 658.824913  at index 101 
+The global minimum at iter 409 is 658.824913  at index 101 
+The global minimum at iter 410 is 658.824913  at index 101 
+The global minimum at iter 411 is 658.824913  at index 101 
+The global minimum at iter 412 is 658.824913  at index 101 
+The global minimum at iter 413 is 658.824913  at index 101 
+The global minimum at iter 414 is 658.824913  at index 101 
+The global minimum at iter 415 is 658.824913  at index 101 
+The global minimum at iter 416 is 658.824913  at index 101 
+The global minimum at iter 417 is 658.824913  at index 101 
+The global minimum at iter 418 is 658.824913  at index 101 
+The global minimum at iter 419 is 658.824913  at index 101 
+The global minimum at iter 420 is 658.824913  at index 101 
+The global minimum at iter 421 is 658.824913  at index 101 
+The global minimum at iter 422 is 658.824913  at index 101 
+The global minimum at iter 423 is 658.824913  at index 101 
+The global minimum at iter 424 is 658.824913  at index 101 
+The global minimum at iter 425 is 658.824913  at index 101 
+The global minimum at iter 426 is 658.824913  at index 101 
+The global minimum at iter 427 is 658.824913  at index 101 
+The global minimum at iter 428 is 658.824913  at index 101 
+The global minimum at iter 429 is 658.824913  at index 101 
+The global minimum at iter 430 is 658.824913  at index 101 
+The global minimum at iter 431 is 658.824913  at index 101 
+The global minimum at iter 432 is 658.824913  at index 101 
+The global minimum at iter 433 is 658.824913  at index 101 
+The global minimum at iter 434 is 658.824913  at index 101 
+The global minimum at iter 435 is 658.824913  at index 101 
+The global minimum at iter 436 is 658.824913  at index 101 
+The global minimum at iter 437 is 658.824913  at index 101 
+The global minimum at iter 438 is 658.824913  at index 101 
+The global minimum at iter 439 is 658.824913  at index 101 
+The global minimum at iter 440 is 658.824913  at index 101 
+The global minimum at iter 441 is 658.824913  at index 101 
+The global minimum at iter 442 is 658.824913  at index 101 
+The global minimum at iter 443 is 658.824913  at index 101 
+The global minimum at iter 444 is 658.824913  at index 101 
+The global minimum at iter 445 is 658.824913  at index 101 
+The global minimum at iter 446 is 658.824913  at index 101 
+The global minimum at iter 447 is 658.824913  at index 101 
+The global minimum at iter 448 is 658.824913  at index 101 
+The global minimum at iter 449 is 658.824913  at index 101 
+The global minimum at iter 450 is 658.824913  at index 101 
+The global minimum at iter 451 is 658.824913  at index 101 
+The global minimum at iter 452 is 658.824913  at index 101 
+The global minimum at iter 453 is 658.824913  at index 101 
+The global minimum at iter 454 is 658.824913  at index 101 
+The global minimum at iter 455 is 658.824913  at index 101 
+The global minimum at iter 456 is 658.824913  at index 101 
+The global minimum at iter 457 is 658.824913  at index 101 
+The global minimum at iter 458 is 658.824913  at index 101 
+The global minimum at iter 459 is 658.824913  at index 101 
+The global minimum at iter 460 is 658.824913  at index 101 
+The global minimum at iter 461 is 658.824913  at index 101 
+The global minimum at iter 462 is 658.824913  at index 101 
+The global minimum at iter 463 is 658.824913  at index 101 
+The global minimum at iter 464 is 658.824913  at index 101 
+The global minimum at iter 465 is 658.824913  at index 101 
+The global minimum at iter 466 is 658.824913  at index 101 
+The global minimum at iter 467 is 658.824913  at index 101 
+The global minimum at iter 468 is 658.824913  at index 101 
+The global minimum at iter 469 is 658.824913  at index 101 
+The global minimum at iter 470 is 658.824913  at index 101 
+The global minimum at iter 471 is 658.824913  at index 101 
+The global minimum at iter 472 is 658.824913  at index 101 
+The global minimum at iter 473 is 658.824913  at index 101 
+The global minimum at iter 474 is 658.824913  at index 101 
+The global minimum at iter 475 is 658.824913  at index 101 
+The global minimum at iter 476 is 658.824913  at index 101 
+The global minimum at iter 477 is 658.824913  at index 101 
+The global minimum at iter 478 is 658.824913  at index 101 
+The global minimum at iter 479 is 658.824913  at index 101 
+The global minimum at iter 480 is 658.824913  at index 101 
+The global minimum at iter 481 is 658.824913  at index 101 
+The global minimum at iter 482 is 658.824913  at index 101 
+The global minimum at iter 483 is 658.824913  at index 101 
+The global minimum at iter 484 is 658.824913  at index 101 
+The global minimum at iter 485 is 658.824913  at index 101 
+The global minimum at iter 486 is 658.824913  at index 101 
+The global minimum at iter 487 is 658.824913  at index 101 
+The global minimum at iter 488 is 658.824913  at index 101 
+The global minimum at iter 489 is 658.824913  at index 101 
+The global minimum at iter 490 is 658.824913  at index 101 
+The global minimum at iter 491 is 658.824913  at index 101 
+The global minimum at iter 492 is 658.824913  at index 101 
+The global minimum at iter 493 is 658.824913  at index 101 
+The global minimum at iter 494 is 658.824913  at index 101 
+The global minimum at iter 495 is 658.824913  at index 101 
+The global minimum at iter 496 is 658.824913  at index 101 
+The global minimum at iter 497 is 658.824913  at index 101 
+The global minimum at iter 498 is 658.824913  at index 101 
+The global minimum at iter 499 is 658.824913  at index 101 
+The global minimum at iter 500 is 658.824913  at index 101 
+The global minimum at iter 501 is 658.824913  at index 101 
+The global minimum at iter 502 is 658.824913  at index 101 
+The global minimum at iter 503 is 658.824913  at index 101 
+The global minimum at iter 504 is 658.824913  at index 101 
+The global minimum at iter 505 is 658.824913  at index 101 
+The global minimum at iter 506 is 658.824913  at index 101 
+The global minimum at iter 507 is 658.824913  at index 101 
+The global minimum at iter 508 is 658.824913  at index 101 
+The global minimum at iter 509 is 658.824913  at index 101 
+The global minimum at iter 510 is 658.824913  at index 101 
+The global minimum at iter 511 is 658.824913  at index 101 
+The global minimum at iter 512 is 658.824913  at index 101 
+The global minimum at iter 513 is 658.824913  at index 101 
+The global minimum at iter 514 is 658.824913  at index 101 
+The global minimum at iter 515 is 658.824913  at index 101 
+The global minimum at iter 516 is 658.824913  at index 101 
+The global minimum at iter 517 is 658.824913  at index 101 
+The global minimum at iter 518 is 658.824913  at index 101 
+The global minimum at iter 519 is 658.824913  at index 101 
+The global minimum at iter 520 is 658.824913  at index 101 
+The global minimum at iter 521 is 658.824913  at index 101 
+The global minimum at iter 522 is 658.824913  at index 101 
+The global minimum at iter 523 is 658.824913  at index 101 
+The global minimum at iter 524 is 658.824913  at index 101 
+The global minimum at iter 525 is 658.824913  at index 101 
+The global minimum at iter 526 is 658.824913  at index 101 
+The global minimum at iter 527 is 658.824913  at index 101 
+The global minimum at iter 528 is 658.824913  at index 101 
+The global minimum at iter 529 is 658.824913  at index 101 
+The global minimum at iter 530 is 658.824913  at index 101 
+The global minimum at iter 531 is 658.824913  at index 101 
+The global minimum at iter 532 is 658.824913  at index 101 
+The global minimum at iter 533 is 658.824913  at index 101 
+The global minimum at iter 534 is 658.824913  at index 101 
+The global minimum at iter 535 is 658.824913  at index 101 
+The global minimum at iter 536 is 658.824913  at index 101 
+The global minimum at iter 537 is 658.824913  at index 101 
+The global minimum at iter 538 is 658.824913  at index 101 
+The global minimum at iter 539 is 658.824913  at index 101 
+The global minimum at iter 540 is 658.824913  at index 101 
+The global minimum at iter 541 is 658.824913  at index 101 
+The global minimum at iter 542 is 658.824913  at index 101 
+The global minimum at iter 543 is 658.824913  at index 101 
+The global minimum at iter 544 is 658.824913  at index 101 
+The global minimum at iter 545 is 658.824913  at index 101 
+The global minimum at iter 546 is 658.824913  at index 101 
+The global minimum at iter 547 is 658.824913  at index 101 
+The global minimum at iter 548 is 658.824913  at index 101 
+The global minimum at iter 549 is 658.824913  at index 101 
+The global minimum at iter 550 is 658.824913  at index 101 
+The global minimum at iter 551 is 658.824913  at index 101 
+The global minimum at iter 552 is 658.824913  at index 101 
+The global minimum at iter 553 is 658.824913  at index 101 
+The global minimum at iter 554 is 658.824913  at index 101 
+The global minimum at iter 555 is 658.824913  at index 101 
+The global minimum at iter 556 is 658.824913  at index 101 
+The global minimum at iter 557 is 658.824913  at index 101 
+The global minimum at iter 558 is 658.824913  at index 101 
+The global minimum at iter 559 is 658.824913  at index 101 
+The global minimum at iter 560 is 658.824913  at index 101 
+The global minimum at iter 561 is 658.824913  at index 101 
+The global minimum at iter 562 is 658.824913  at index 101 
+The global minimum at iter 563 is 658.824913  at index 101 
+The global minimum at iter 564 is 658.824913  at index 101 
+The global minimum at iter 565 is 658.824913  at index 101 
+The global minimum at iter 566 is 658.824913  at index 101 
+The global minimum at iter 567 is 658.824913  at index 101 
+The global minimum at iter 568 is 658.824913  at index 101 
+The global minimum at iter 569 is 658.824913  at index 101 
+The global minimum at iter 570 is 658.824913  at index 101 
+The global minimum at iter 571 is 658.824913  at index 101 
+The global minimum at iter 572 is 658.824913  at index 101 
+The global minimum at iter 573 is 658.824913  at index 101 
+The global minimum at iter 574 is 658.824913  at index 101 
+The global minimum at iter 575 is 658.824913  at index 101 
+The global minimum at iter 576 is 658.824913  at index 101 
+The global minimum at iter 577 is 658.824913  at index 101 
+The global minimum at iter 578 is 658.824913  at index 101 
+The global minimum at iter 579 is 658.824913  at index 101 
+The global minimum at iter 580 is 658.824913  at index 101 
+The global minimum at iter 581 is 658.824913  at index 101 
+The global minimum at iter 582 is 658.824913  at index 101 
+The global minimum at iter 583 is 658.824913  at index 101 
+The global minimum at iter 584 is 658.824913  at index 101 
+The global minimum at iter 585 is 658.824913  at index 101 
+The global minimum at iter 586 is 658.824913  at index 101 
+The global minimum at iter 587 is 658.824913  at index 101 
+The global minimum at iter 588 is 658.824913  at index 101 
+The global minimum at iter 589 is 658.824913  at index 101 
+The global minimum at iter 590 is 658.824913  at index 101 
+The global minimum at iter 591 is 658.824913  at index 101 
+The global minimum at iter 592 is 658.824913  at index 101 
+The global minimum at iter 593 is 658.824913  at index 101 
+The global minimum at iter 594 is 658.824913  at index 101 
+The global minimum at iter 595 is 658.824913  at index 101 
+The global minimum at iter 596 is 638.295475  at index 19 
+The global minimum at iter 597 is 638.295475  at index 19 
+The global minimum at iter 598 is 638.295475  at index 19 
+The global minimum at iter 599 is 638.295475  at index 19 
+The global minimum at iter 600 is 638.295475  at index 19 
+The global minimum at iter 601 is 638.295475  at index 19 
+The global minimum at iter 602 is 638.295475  at index 19 
+The global minimum at iter 603 is 638.295475  at index 19 
+The global minimum at iter 604 is 638.295475  at index 19 
+The global minimum at iter 605 is 638.295475  at index 19 
+The global minimum at iter 606 is 638.295475  at index 19 
+The global minimum at iter 607 is 638.295475  at index 19 
+The global minimum at iter 608 is 638.295475  at index 19 
+The global minimum at iter 609 is 638.295475  at index 19 
+The global minimum at iter 610 is 638.295475  at index 19 
+The global minimum at iter 611 is 638.295475  at index 19 
+The global minimum at iter 612 is 638.295475  at index 19 
+The global minimum at iter 613 is 638.295475  at index 19 
+The global minimum at iter 614 is 638.295475  at index 19 
+The global minimum at iter 615 is 638.295475  at index 19 
+The global minimum at iter 616 is 638.295475  at index 19 
+The global minimum at iter 617 is 638.295475  at index 19 
+The global minimum at iter 618 is 638.295475  at index 19 
+The global minimum at iter 619 is 638.295475  at index 19 
+The global minimum at iter 620 is 638.295475  at index 19 
+The global minimum at iter 621 is 638.295475  at index 19 
+The global minimum at iter 622 is 638.295475  at index 19 
+The global minimum at iter 623 is 638.295475  at index 19 
+The global minimum at iter 624 is 638.295475  at index 19 
+The global minimum at iter 625 is 638.295475  at index 19 
+The global minimum at iter 626 is 638.295475  at index 19 
+The global minimum at iter 627 is 638.295475  at index 19 
+The global minimum at iter 628 is 638.295475  at index 19 
+The global minimum at iter 629 is 638.295475  at index 19 
+The global minimum at iter 630 is 638.295475  at index 19 
+The global minimum at iter 631 is 638.295475  at index 19 
+The global minimum at iter 632 is 638.295475  at index 19 
+The global minimum at iter 633 is 638.295475  at index 19 
+The global minimum at iter 634 is 638.295475  at index 19 
+The global minimum at iter 635 is 638.295475  at index 19 
+The global minimum at iter 636 is 638.295475  at index 19 
+The global minimum at iter 637 is 638.295475  at index 19 
+The global minimum at iter 638 is 638.295475  at index 19 
+The global minimum at iter 639 is 638.295475  at index 19 
+The global minimum at iter 640 is 638.295475  at index 19 
+The global minimum at iter 641 is 638.295475  at index 19 
+The global minimum at iter 642 is 638.295475  at index 19 
+The global minimum at iter 643 is 638.295475  at index 19 
+The global minimum at iter 644 is 638.295475  at index 19 
+The global minimum at iter 645 is 638.295475  at index 19 
+The global minimum at iter 646 is 638.295475  at index 19 
+The global minimum at iter 647 is 638.295475  at index 19 
+The global minimum at iter 648 is 638.295475  at index 19 
+The global minimum at iter 649 is 638.295475  at index 19 
+The global minimum at iter 650 is 638.295475  at index 19 
+The global minimum at iter 651 is 638.295475  at index 19 
+The global minimum at iter 652 is 638.295475  at index 19 
+The global minimum at iter 653 is 638.295475  at index 19 
+The global minimum at iter 654 is 638.295475  at index 19 
+The global minimum at iter 655 is 638.295475  at index 19 
+The global minimum at iter 656 is 638.295475  at index 19 
+The global minimum at iter 657 is 638.295475  at index 19 
+The global minimum at iter 658 is 638.295475  at index 19 
+The global minimum at iter 659 is 638.295475  at index 19 
+The global minimum at iter 660 is 638.295475  at index 19 
+The global minimum at iter 661 is 638.295475  at index 19 
+The global minimum at iter 662 is 638.295475  at index 19 
+The global minimum at iter 663 is 638.295475  at index 19 
+The global minimum at iter 664 is 638.295475  at index 19 
+The global minimum at iter 665 is 638.295475  at index 19 
+The global minimum at iter 666 is 638.295475  at index 19 
+The global minimum at iter 667 is 638.295475  at index 19 
+The global minimum at iter 668 is 638.295475  at index 19 
+The global minimum at iter 669 is 638.295475  at index 19 
+The global minimum at iter 670 is 638.295475  at index 19 
+The global minimum at iter 671 is 638.295475  at index 19 
+The global minimum at iter 672 is 638.295475  at index 19 
+The global minimum at iter 673 is 638.295475  at index 19 
+The global minimum at iter 674 is 638.295475  at index 19 
+The global minimum at iter 675 is 638.295475  at index 19 
+The global minimum at iter 676 is 638.295475  at index 19 
+The global minimum at iter 677 is 638.295475  at index 19 
+The global minimum at iter 678 is 638.295475  at index 19 
+The global minimum at iter 679 is 638.295475  at index 19 
+The global minimum at iter 680 is 638.295475  at index 19 
+The global minimum at iter 681 is 638.295475  at index 19 
+The global minimum at iter 682 is 638.295475  at index 19 
+The global minimum at iter 683 is 638.295475  at index 19 
+The global minimum at iter 684 is 638.295475  at index 19 
+The global minimum at iter 685 is 638.295475  at index 19 
+The global minimum at iter 686 is 638.295475  at index 19 
+The global minimum at iter 687 is 638.295475  at index 19 
+The global minimum at iter 688 is 638.295475  at index 19 
+The global minimum at iter 689 is 638.295475  at index 19 
+The global minimum at iter 690 is 638.295475  at index 19 
+The global minimum at iter 691 is 638.295475  at index 19 
+The global minimum at iter 692 is 638.295475  at index 19 
+The global minimum at iter 693 is 638.295475  at index 19 
+The global minimum at iter 694 is 638.295475  at index 19 
+The global minimum at iter 695 is 638.295475  at index 19 
+The global minimum at iter 696 is 638.295475  at index 19 
+The global minimum at iter 697 is 638.295475  at index 19 
+The global minimum at iter 698 is 638.295475  at index 19 
+The global minimum at iter 699 is 638.295475  at index 19 
+The global minimum at iter 700 is 638.295475  at index 19 
+The global minimum at iter 701 is 638.295475  at index 19 
+The global minimum at iter 702 is 638.295475  at index 19 
+The global minimum at iter 703 is 638.295475  at index 19 
+The global minimum at iter 704 is 638.295475  at index 19 
+The global minimum at iter 705 is 638.295475  at index 19 
+The global minimum at iter 706 is 638.295475  at index 19 
+The global minimum at iter 707 is 638.295475  at index 19 
+The global minimum at iter 708 is 638.295475  at index 19 
+The global minimum at iter 709 is 638.295475  at index 19 
+The global minimum at iter 710 is 638.295475  at index 19 
+The global minimum at iter 711 is 638.295475  at index 19 
+The global minimum at iter 712 is 638.295475  at index 19 
+The global minimum at iter 713 is 638.295475  at index 19 
+The global minimum at iter 714 is 638.295475  at index 19 
+The global minimum at iter 715 is 638.295475  at index 19 
+The global minimum at iter 716 is 638.295475  at index 19 
+The global minimum at iter 717 is 638.295475  at index 19 
+The global minimum at iter 718 is 638.295475  at index 19 
+The global minimum at iter 719 is 638.295475  at index 19 
+The global minimum at iter 720 is 638.295475  at index 19 
+The global minimum at iter 721 is 638.295475  at index 19 
+The global minimum at iter 722 is 638.295475  at index 19 
+The global minimum at iter 723 is 638.295475  at index 19 
+The global minimum at iter 724 is 638.295475  at index 19 
+The global minimum at iter 725 is 638.295475  at index 19 
+The global minimum at iter 726 is 638.295475  at index 19 
+The global minimum at iter 727 is 638.295475  at index 19 
+The global minimum at iter 728 is 638.295475  at index 19 
+The global minimum at iter 729 is 638.295475  at index 19 
+The global minimum at iter 730 is 638.295475  at index 19 
+The global minimum at iter 731 is 638.295475  at index 19 
+The global minimum at iter 732 is 638.295475  at index 19 
+The global minimum at iter 733 is 638.295475  at index 19 
+The global minimum at iter 734 is 638.295475  at index 19 
+The global minimum at iter 735 is 638.295475  at index 19 
+The global minimum at iter 736 is 638.295475  at index 19 
+The global minimum at iter 737 is 638.295475  at index 19 
+The global minimum at iter 738 is 638.295475  at index 19 
+The global minimum at iter 739 is 638.295475  at index 19 
+The global minimum at iter 740 is 638.295475  at index 19 
+The global minimum at iter 741 is 638.295475  at index 19 
+The global minimum at iter 742 is 638.295475  at index 19 
+The global minimum at iter 743 is 638.295475  at index 19 
+The global minimum at iter 744 is 638.295475  at index 19 
+The global minimum at iter 745 is 638.295475  at index 19 
+The global minimum at iter 746 is 638.295475  at index 19 
+The global minimum at iter 747 is 638.295475  at index 19 
+The global minimum at iter 748 is 638.295475  at index 19 
+The global minimum at iter 749 is 638.295475  at index 19 
+The global minimum at iter 750 is 638.295475  at index 19 
+The global minimum at iter 751 is 638.295475  at index 19 
+The global minimum at iter 752 is 638.295475  at index 19 
+The global minimum at iter 753 is 638.295475  at index 19 
+The global minimum at iter 754 is 638.295475  at index 19 
+The global minimum at iter 755 is 638.295475  at index 19 
+The global minimum at iter 756 is 638.295475  at index 19 
+The global minimum at iter 757 is 638.295475  at index 19 
+The global minimum at iter 758 is 638.295475  at index 19 
+The global minimum at iter 759 is 638.295475  at index 19 
+The global minimum at iter 760 is 638.295475  at index 19 
+The global minimum at iter 761 is 638.295475  at index 19 
+The global minimum at iter 762 is 638.295475  at index 19 
+The global minimum at iter 763 is 638.295475  at index 19 
+The global minimum at iter 764 is 638.295475  at index 19 
+The global minimum at iter 765 is 638.295475  at index 19 
+The global minimum at iter 766 is 638.295475  at index 19 
+The global minimum at iter 767 is 638.295475  at index 19 
+The global minimum at iter 768 is 638.295475  at index 19 
+The global minimum at iter 769 is 638.295475  at index 19 
+The global minimum at iter 770 is 638.295475  at index 19 
+The global minimum at iter 771 is 638.295475  at index 19 
+The global minimum at iter 772 is 638.295475  at index 19 
+The global minimum at iter 773 is 638.295475  at index 19 
+The global minimum at iter 774 is 638.295475  at index 19 
+The global minimum at iter 775 is 638.295475  at index 19 
+The global minimum at iter 776 is 638.295475  at index 19 
+The global minimum at iter 777 is 638.295475  at index 19 
+The global minimum at iter 778 is 638.295475  at index 19 
+The global minimum at iter 779 is 638.295475  at index 19 
+The global minimum at iter 780 is 638.295475  at index 19 
+The global minimum at iter 781 is 638.295475  at index 19 
+The global minimum at iter 782 is 638.295475  at index 19 
+The global minimum at iter 783 is 638.295475  at index 19 
+The global minimum at iter 784 is 638.295475  at index 19 
+The global minimum at iter 785 is 638.295475  at index 19 
+The global minimum at iter 786 is 638.295475  at index 19 
+The global minimum at iter 787 is 638.295475  at index 19 
+The global minimum at iter 788 is 638.295475  at index 19 
+The global minimum at iter 789 is 638.295475  at index 19 
+The global minimum at iter 790 is 638.295475  at index 19 
+The global minimum at iter 791 is 638.295475  at index 19 
+The global minimum at iter 792 is 638.295475  at index 19 
+The global minimum at iter 793 is 638.295475  at index 19 
+The global minimum at iter 794 is 638.295475  at index 19 
+The global minimum at iter 795 is 638.295475  at index 19 
+The global minimum at iter 796 is 638.295475  at index 19 
+The global minimum at iter 797 is 638.295475  at index 19 
+The global minimum at iter 798 is 638.295475  at index 19 
+The global minimum at iter 799 is 638.295475  at index 19 
+The global minimum at iter 800 is 638.295475  at index 19 
+The global minimum at iter 801 is 638.295475  at index 19 
+The global minimum at iter 802 is 638.295475  at index 19 
+The global minimum at iter 803 is 638.295475  at index 19 
+The global minimum at iter 804 is 638.295475  at index 19 
+The global minimum at iter 805 is 638.295475  at index 19 
+The global minimum at iter 806 is 638.295475  at index 19 
+The global minimum at iter 807 is 638.295475  at index 19 
+The global minimum at iter 808 is 638.295475  at index 19 
+The global minimum at iter 809 is 638.295475  at index 19 
+The global minimum at iter 810 is 638.295475  at index 19 
+The global minimum at iter 811 is 638.295475  at index 19 
+The global minimum at iter 812 is 638.295475  at index 19 
+The global minimum at iter 813 is 638.295475  at index 19 
+The global minimum at iter 814 is 638.295475  at index 19 
+The global minimum at iter 815 is 638.295475  at index 19 
+The global minimum at iter 816 is 638.295475  at index 19 
+The global minimum at iter 817 is 638.295475  at index 19 
+The global minimum at iter 818 is 638.295475  at index 19 
+The global minimum at iter 819 is 638.295475  at index 19 
+The global minimum at iter 820 is 638.295475  at index 19 
+The global minimum at iter 821 is 638.295475  at index 19 
+The global minimum at iter 822 is 638.295475  at index 19 
+The global minimum at iter 823 is 638.295475  at index 19 
+The global minimum at iter 824 is 638.295475  at index 19 
+The global minimum at iter 825 is 638.295475  at index 19 
+The global minimum at iter 826 is 638.295475  at index 19 
+The global minimum at iter 827 is 638.295475  at index 19 
+The global minimum at iter 828 is 638.295475  at index 19 
+The global minimum at iter 829 is 638.295475  at index 19 
+The global minimum at iter 830 is 638.295475  at index 19 
+The global minimum at iter 831 is 638.295475  at index 19 
+The global minimum at iter 832 is 638.295475  at index 19 
+The global minimum at iter 833 is 638.295475  at index 19 
+The global minimum at iter 834 is 638.295475  at index 19 
+The global minimum at iter 835 is 638.295475  at index 19 
+The global minimum at iter 836 is 638.295475  at index 19 
+The global minimum at iter 837 is 638.295475  at index 19 
+The global minimum at iter 838 is 638.295475  at index 19 
+The global minimum at iter 839 is 638.295475  at index 19 
+The global minimum at iter 840 is 638.295475  at index 19 
+The global minimum at iter 841 is 638.295475  at index 19 
+The global minimum at iter 842 is 638.295475  at index 19 
+The global minimum at iter 843 is 638.295475  at index 19 
+The global minimum at iter 844 is 638.295475  at index 19 
+The global minimum at iter 845 is 638.295475  at index 19 
+The global minimum at iter 846 is 638.295475  at index 19 
+The global minimum at iter 847 is 638.295475  at index 19 
+The global minimum at iter 848 is 638.295475  at index 19 
+The global minimum at iter 849 is 638.295475  at index 19 
+The global minimum at iter 850 is 638.295475  at index 19 
+The global minimum at iter 851 is 638.295475  at index 19 
+The global minimum at iter 852 is 638.295475  at index 19 
+The global minimum at iter 853 is 638.295475  at index 19 
+The global minimum at iter 854 is 638.295475  at index 19 
+The global minimum at iter 855 is 638.295475  at index 19 
+The global minimum at iter 856 is 638.295475  at index 19 
+The global minimum at iter 857 is 638.295475  at index 19 
+The global minimum at iter 858 is 638.295475  at index 19 
+The global minimum at iter 859 is 638.295475  at index 19 
+The global minimum at iter 860 is 638.295475  at index 19 
+The global minimum at iter 861 is 638.295475  at index 19 
+The global minimum at iter 862 is 638.295475  at index 19 
+The global minimum at iter 863 is 638.295475  at index 19 
+The global minimum at iter 864 is 638.295475  at index 19 
+The global minimum at iter 865 is 638.295475  at index 19 
+The global minimum at iter 866 is 638.295475  at index 19 
+The global minimum at iter 867 is 638.295475  at index 19 
+The global minimum at iter 868 is 638.295475  at index 19 
+The global minimum at iter 869 is 638.295475  at index 19 
+The global minimum at iter 870 is 638.295475  at index 19 
+The global minimum at iter 871 is 638.295475  at index 19 
+The global minimum at iter 872 is 638.295475  at index 19 
+The global minimum at iter 873 is 638.295475  at index 19 
+The global minimum at iter 874 is 638.295475  at index 19 
+The global minimum at iter 875 is 638.295475  at index 19 
+The global minimum at iter 876 is 638.295475  at index 19 
+The global minimum at iter 877 is 638.295475  at index 19 
+The global minimum at iter 878 is 638.295475  at index 19 
+The global minimum at iter 879 is 638.295475  at index 19 
+The global minimum at iter 880 is 638.295475  at index 19 
+The global minimum at iter 881 is 638.295475  at index 19 
+The global minimum at iter 882 is 638.295475  at index 19 
+The global minimum at iter 883 is 638.295475  at index 19 
+The global minimum at iter 884 is 638.295475  at index 19 
+The global minimum at iter 885 is 638.295475  at index 19 
+The global minimum at iter 886 is 638.295475  at index 19 
+The global minimum at iter 887 is 638.295475  at index 19 
+The global minimum at iter 888 is 638.295475  at index 19 
+The global minimum at iter 889 is 638.295475  at index 19 
+The global minimum at iter 890 is 638.295475  at index 19 
+The global minimum at iter 891 is 638.295475  at index 19 
+The global minimum at iter 892 is 638.295475  at index 19 
+The global minimum at iter 893 is 638.295475  at index 19 
+The global minimum at iter 894 is 638.295475  at index 19 
+The global minimum at iter 895 is 638.295475  at index 19 
+The global minimum at iter 896 is 638.295475  at index 19 
+The global minimum at iter 897 is 638.295475  at index 19 
+The global minimum at iter 898 is 638.295475  at index 19 
+The global minimum at iter 899 is 638.295475  at index 19 
+The global minimum at iter 900 is 638.295475  at index 19 
+The global minimum at iter 901 is 638.295475  at index 19 
+The global minimum at iter 902 is 638.295475  at index 19 
+The global minimum at iter 903 is 638.295475  at index 19 
+The global minimum at iter 904 is 638.295475  at index 19 
+The global minimum at iter 905 is 638.295475  at index 19 
+The global minimum at iter 906 is 638.295475  at index 19 
+The global minimum at iter 907 is 638.295475  at index 19 
+The global minimum at iter 908 is 638.295475  at index 19 
+The global minimum at iter 909 is 638.295475  at index 19 
+The global minimum at iter 910 is 638.295475  at index 19 
+The global minimum at iter 911 is 638.295475  at index 19 
+The global minimum at iter 912 is 638.295475  at index 19 
+The global minimum at iter 913 is 638.295475  at index 19 
+The global minimum at iter 914 is 638.295475  at index 19 
+The global minimum at iter 915 is 638.295475  at index 19 
+The global minimum at iter 916 is 638.295475  at index 19 
+The global minimum at iter 917 is 638.295475  at index 19 
+The global minimum at iter 918 is 638.295475  at index 19 
+The global minimum at iter 919 is 638.295475  at index 19 
+The global minimum at iter 920 is 638.295475  at index 19 
+The global minimum at iter 921 is 638.295475  at index 19 
+The global minimum at iter 922 is 638.295475  at index 19 
+The global minimum at iter 923 is 638.295475  at index 19 
+The global minimum at iter 924 is 638.295475  at index 19 
+The global minimum at iter 925 is 638.295475  at index 19 
+The global minimum at iter 926 is 638.295475  at index 19 
+The global minimum at iter 927 is 638.295475  at index 19 
+The global minimum at iter 928 is 638.295475  at index 19 
+The global minimum at iter 929 is 638.295475  at index 19 
+The global minimum at iter 930 is 638.295475  at index 19 
+The global minimum at iter 931 is 638.295475  at index 19 
+The global minimum at iter 932 is 638.295475  at index 19 
+The global minimum at iter 933 is 638.295475  at index 19 
+The global minimum at iter 934 is 638.295475  at index 19 
+The global minimum at iter 935 is 638.295475  at index 19 
+The global minimum at iter 936 is 638.295475  at index 19 
+The global minimum at iter 937 is 638.295475  at index 19 
+The global minimum at iter 938 is 638.295475  at index 19 
+The global minimum at iter 939 is 638.295475  at index 19 
+The global minimum at iter 940 is 638.295475  at index 19 
+The global minimum at iter 941 is 638.295475  at index 19 
+The global minimum at iter 942 is 638.295475  at index 19 
+The global minimum at iter 943 is 638.295475  at index 19 
+The global minimum at iter 944 is 638.295475  at index 19 
+The global minimum at iter 945 is 638.295475  at index 19 
+The global minimum at iter 946 is 638.295475  at index 19 
+The global minimum at iter 947 is 638.295475  at index 19 
+The global minimum at iter 948 is 638.295475  at index 19 
+The global minimum at iter 949 is 638.295475  at index 19 
+The global minimum at iter 950 is 638.295475  at index 19 
+The global minimum at iter 951 is 638.295475  at index 19 
+The global minimum at iter 952 is 638.295475  at index 19 
+The global minimum at iter 953 is 638.295475  at index 19 
+The global minimum at iter 954 is 638.295475  at index 19 
+The global minimum at iter 955 is 638.295475  at index 19 
+The global minimum at iter 956 is 638.295475  at index 19 
+The global minimum at iter 957 is 638.295475  at index 19 
+The global minimum at iter 958 is 638.295475  at index 19 
+The global minimum at iter 959 is 638.295475  at index 19 
+The global minimum at iter 960 is 638.295475  at index 19 
+The global minimum at iter 961 is 638.295475  at index 19 
+The global minimum at iter 962 is 638.295475  at index 19 
+The global minimum at iter 963 is 638.295475  at index 19 
+The global minimum at iter 964 is 638.295475  at index 19 
+The global minimum at iter 965 is 638.295475  at index 19 
+The global minimum at iter 966 is 638.295475  at index 19 
+The global minimum at iter 967 is 638.295475  at index 19 
+The global minimum at iter 968 is 638.295475  at index 19 
+The global minimum at iter 969 is 638.295475  at index 19 
+The global minimum at iter 970 is 638.295475  at index 19 
+The global minimum at iter 971 is 638.295475  at index 19 
+The global minimum at iter 972 is 638.295475  at index 19 
+The global minimum at iter 973 is 638.295475  at index 19 
+The global minimum at iter 974 is 638.295475  at index 19 
+The global minimum at iter 975 is 638.295475  at index 19 
+The global minimum at iter 976 is 638.295475  at index 19 
+The global minimum at iter 977 is 638.295475  at index 19 
+The global minimum at iter 978 is 638.295475  at index 19 
+The global minimum at iter 979 is 638.295475  at index 19 
+The global minimum at iter 980 is 638.295475  at index 19 
+The global minimum at iter 981 is 638.295475  at index 19 
+The global minimum at iter 982 is 638.295475  at index 19 
+The global minimum at iter 983 is 638.295475  at index 19 
+The global minimum at iter 984 is 638.295475  at index 19 
+The global minimum at iter 985 is 638.295475  at index 19 
+The global minimum at iter 986 is 638.295475  at index 19 
+The global minimum at iter 987 is 638.295475  at index 19 
+The global minimum at iter 988 is 638.295475  at index 19 
+The global minimum at iter 989 is 638.295475  at index 19 
+The global minimum at iter 990 is 638.295475  at index 19 
+The global minimum at iter 991 is 638.295475  at index 19 
+The global minimum at iter 992 is 638.295475  at index 19 
+The global minimum at iter 993 is 638.295475  at index 19 
+The global minimum at iter 994 is 638.295475  at index 19 
+The global minimum at iter 995 is 638.295475  at index 19 
+The global minimum at iter 996 is 638.295475  at index 19 
+The global minimum at iter 997 is 638.295475  at index 19 
+The global minimum at iter 998 is 638.295475  at index 19 
+The global minimum at iter 999 is 638.295475  at index 19 
+The global minimum at iter 1000 is 638.295475  at index 19 
+The total runtime for GA is 3.07104
++ rm /tmp/hosts.157478

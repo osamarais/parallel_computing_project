@@ -1,0 +1,1 @@
+completed synmutationdata, tested on 12 ranks

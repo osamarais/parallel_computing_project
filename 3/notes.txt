@@ -1,0 +1,1 @@
+completed the cumulative fitness sybchronization, working on multiple gpus

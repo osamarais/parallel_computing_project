@@ -1,0 +1,4 @@
+sbatch --partition=dcs -N 1 --ntasks-per-node=6 --gres=gpu:6 -t 30 ./runCode.sh
+
+module load gcc/7.4.0/1 spectrum-mpi cuda
+
